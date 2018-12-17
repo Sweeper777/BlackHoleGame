@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A3471BC21C72DAE0079F5A3 /* GameAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3471B721C72DAE0079F5A3 /* GameAI.swift */; };
+		5A3471BD21C72DAE0079F5A3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3471B821C72DAE0079F5A3 /* Colors.swift */; };
+		5A3471BE21C72DAE0079F5A3 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3471B921C72DAE0079F5A3 /* Tile.swift */; };
+		5A3471BF21C72DAE0079F5A3 /* TriangularArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3471BA21C72DAE0079F5A3 /* TriangularArray.swift */; };
+		5A3471C021C72DAE0079F5A3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3471BB21C72DAE0079F5A3 /* Game.swift */; };
 		5A37ED4121C38F0D00251FD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37ED4021C38F0D00251FD5 /* AppDelegate.swift */; };
 		5A37ED4321C38F0D00251FD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37ED4221C38F0D00251FD5 /* ViewController.swift */; };
 		5A37ED4621C38F0D00251FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A37ED4421C38F0D00251FD5 /* Main.storyboard */; };
@@ -26,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A3471B721C72DAE0079F5A3 /* GameAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAI.swift; sourceTree = "<group>"; };
+		5A3471B821C72DAE0079F5A3 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		5A3471B921C72DAE0079F5A3 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		5A3471BA21C72DAE0079F5A3 /* TriangularArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangularArray.swift; sourceTree = "<group>"; };
+		5A3471BB21C72DAE0079F5A3 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5A37ED3D21C38F0D00251FD5 /* BlackHoleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHoleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A37ED4021C38F0D00251FD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A37ED4221C38F0D00251FD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +87,11 @@
 		5A37ED3F21C38F0D00251FD5 /* BlackHoleGame */ = {
 			isa = PBXGroup;
 			children = (
+				5A3471B821C72DAE0079F5A3 /* Colors.swift */,
+				5A3471BB21C72DAE0079F5A3 /* Game.swift */,
+				5A3471B721C72DAE0079F5A3 /* GameAI.swift */,
+				5A3471B921C72DAE0079F5A3 /* Tile.swift */,
+				5A3471BA21C72DAE0079F5A3 /* TriangularArray.swift */,
 				5A37ED4021C38F0D00251FD5 /* AppDelegate.swift */,
 				5A37ED4221C38F0D00251FD5 /* ViewController.swift */,
 				5A37ED4421C38F0D00251FD5 /* Main.storyboard */,
@@ -197,6 +212,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3471BC21C72DAE0079F5A3 /* GameAI.swift in Sources */,
+				5A3471BD21C72DAE0079F5A3 /* Colors.swift in Sources */,
+				5A3471C021C72DAE0079F5A3 /* Game.swift in Sources */,
+				5A3471BF21C72DAE0079F5A3 /* TriangularArray.swift in Sources */,
+				5A3471BE21C72DAE0079F5A3 /* Tile.swift in Sources */,
 				5A37ED4321C38F0D00251FD5 /* ViewController.swift in Sources */,
 				5A37ED4121C38F0D00251FD5 /* AppDelegate.swift in Sources */,
 			);
