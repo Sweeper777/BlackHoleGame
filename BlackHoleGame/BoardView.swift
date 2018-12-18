@@ -22,6 +22,11 @@ class BoardView: UIView {
                 .insetBy(dx: 3, dy: 3)
         }
     }
+    
+    var circleDiameter: CGFloat {
+        return actualBoardFrame.height / CGFloat(board.rowCount)
+    }
+    
     override func draw(_ rect: CGRect) {
         if board == nil {
             return
