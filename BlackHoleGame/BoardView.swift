@@ -7,6 +7,21 @@ class BoardView: UIView {
         }
     }
     
+    var actualBoardFrame: CGRect {
+        if bounds.width < bounds.height {
+            return CGRect(x: 0,
+                          y: (bounds.height - bounds.width) / 2,
+                          width: bounds.width,
+                          height: bounds.width)
+                .insetBy(dx: 3, dy: 3)
+        } else {
+            return CGRect(x: (bounds.width - bounds.height) / 2,
+                          y: 0,
+                          width: bounds.height,
+                          height: bounds.height)
+                .insetBy(dx: 3, dy: 3)
+        }
+    }
     override func draw(_ rect: CGRect) {
         if board == nil {
             return
