@@ -12,6 +12,7 @@
 		5A3471BE21C72DAE0079F5A3 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3471B921C72DAE0079F5A3 /* Tile.swift */; };
 		5A3471BF21C72DAE0079F5A3 /* TriangularArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3471BA21C72DAE0079F5A3 /* TriangularArray.swift */; };
 		5A3471C021C72DAE0079F5A3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3471BB21C72DAE0079F5A3 /* Game.swift */; };
+		5A3471C221C72FC90079F5A3 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3471C121C72FC80079F5A3 /* BoardView.swift */; };
 		5A37ED4121C38F0D00251FD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37ED4021C38F0D00251FD5 /* AppDelegate.swift */; };
 		5A37ED4321C38F0D00251FD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37ED4221C38F0D00251FD5 /* ViewController.swift */; };
 		5A37ED4621C38F0D00251FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A37ED4421C38F0D00251FD5 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		5A3471B921C72DAE0079F5A3 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 		5A3471BA21C72DAE0079F5A3 /* TriangularArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangularArray.swift; sourceTree = "<group>"; };
 		5A3471BB21C72DAE0079F5A3 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		5A3471C121C72FC80079F5A3 /* BoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardView.swift; sourceTree = "<group>"; };
 		5A37ED3D21C38F0D00251FD5 /* BlackHoleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHoleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A37ED4021C38F0D00251FD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A37ED4221C38F0D00251FD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				5A3471BA21C72DAE0079F5A3 /* TriangularArray.swift */,
 				5A37ED4021C38F0D00251FD5 /* AppDelegate.swift */,
 				5A37ED4221C38F0D00251FD5 /* ViewController.swift */,
+				5A3471C121C72FC80079F5A3 /* BoardView.swift */,
 				5A37ED4421C38F0D00251FD5 /* Main.storyboard */,
 				5A37ED4721C38F0F00251FD5 /* Assets.xcassets */,
 				5A37ED4921C38F0F00251FD5 /* LaunchScreen.storyboard */,
@@ -217,6 +220,7 @@
 				5A3471C021C72DAE0079F5A3 /* Game.swift in Sources */,
 				5A3471BF21C72DAE0079F5A3 /* TriangularArray.swift in Sources */,
 				5A3471BE21C72DAE0079F5A3 /* Tile.swift in Sources */,
+				5A3471C221C72FC90079F5A3 /* BoardView.swift in Sources */,
 				5A37ED4321C38F0D00251FD5 /* ViewController.swift in Sources */,
 				5A37ED4121C38F0D00251FD5 /* AppDelegate.swift in Sources */,
 			);
