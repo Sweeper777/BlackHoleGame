@@ -54,4 +54,10 @@ class BoardView: UIView {
         let y = (n - c - 1) * h / n
         return CGPoint(x: x, y: y)
     }
+    
+    func pointInViewFrame(forCircleInRow row: Int, atIndex index: Int) -> CGPoint {
+        let point = pointInBoardFrame(forCircleInRow: row, atIndex: index)
+        return CGPoint(x: point.x + actualBoardFrame.origin.x, y: point.y + actualBoardFrame.origin.y)
+    }
+    
 }
