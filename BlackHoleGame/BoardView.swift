@@ -32,10 +32,10 @@ class BoardView: UIView {
             return
         }
         
-        let size = CGSize(width: bounds.width / CGFloat(board.rowCount), height: bounds.height / CGFloat(board.rowCount))
+        let size = CGSize(width: circleDiameter, height: circleDiameter)
         for row in 0..<board.rowCount {
-            for index in 0..<row {
-                let path = UIBezierPath(ovalIn: CGRect(origin: point(forCircleInRow: row, atIndex: index), size: size))
+            for index in 0...row {
+                let path = UIBezierPath(ovalIn: CGRect(origin: pointInViewFrame(forCircleInRow: row, atIndex: index), size: size))
                 path.lineWidth = 3
                 UIColor.black.setStroke()
                 path.stroke()
