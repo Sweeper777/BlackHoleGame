@@ -1,6 +1,8 @@
 import UIKit
 
 class BoardView: UIView {
+    weak var delegate: BoardViewDelegate?
+    
     var board: TriangularArray<Tile>! {
         didSet {
             setNeedsDisplay()
