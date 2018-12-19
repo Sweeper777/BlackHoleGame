@@ -62,4 +62,15 @@ class BoardView: UIView {
         return CGPoint(x: point.x + actualBoardFrame.origin.x, y: point.y + actualBoardFrame.origin.y)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let point = touches.first?.location(in: self) else { return }
+        let pointInBoardFrame = CGPoint(x: point.x - actualBoardFrame.origin.x, y: point.y - actualBoardFrame.origin.y)
+        guard pointInBoardFrame.y >= 0 else { return }
+        let touchedRow = Int(pointInBoardFrame.y / circleDiameter)
+        let rowStart = self.pointInBoardFrame(forCircleInRow: touchedRow, atIndex: 0).x
+        let rowEnd = self.pointInBoardFrame(forCircleInRow: touchedRow, atIndex: touchedRow).x + circleDiameter
+        guard pointInBoardFrame.x >= rowStart && pointInBoardFrame.x <= rowEnd else { return }
+        let touchedIndex = Int((pointInBoardFrame.x - rowStart) / circleDiameter)
+        delegate?.didTouchCircle(inRow: touchedRow, atIndex: touchedIndex)
+    }
 }
