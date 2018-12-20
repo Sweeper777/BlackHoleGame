@@ -7,4 +7,10 @@ class CircleView: UIView {
         }
     }
     
+    func commonInit() {
+        layer.cornerRadius = bounds.width / 2
+        isUserInteractionEnabled = false
+        clipsToBounds = true
+    }
+    
 }
