@@ -2,10 +2,13 @@ import UIKit
 
 class ViewController: UIViewController, BoardViewDelegate {
 
+    var board: BoardView!
+    let game = Game()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let board = BoardView(frame: CGRect(x: 10, y: 10, width: 300, height: 500))
+        board = BoardView(frame: CGRect(x: 10, y: 10, width: 300, height: 500))
         board.backgroundColor = .white
         board.board = Game().board
         board.delegate = self
@@ -13,7 +16,8 @@ class ViewController: UIViewController, BoardViewDelegate {
     }
     
     func didTouchCircle(inRow row: Int, atIndex index: Int) {
-        print("Touched: row \(row), index \(index)")
+        game.makeMove(row: row, index: index)
+        board.board = game.board
     }
 }
 
