@@ -34,6 +34,7 @@ class BoardView: UIView {
             return
         }
         
+        self.subviews.forEach { $0.removeFromSuperview() }
         let size = CGSize(width: circleDiameter, height: circleDiameter)
         for row in 0..<board.rowCount {
             for index in 0...row {
@@ -41,10 +42,23 @@ class BoardView: UIView {
                 path.lineWidth = 3
                 UIColor.black.setStroke()
                 path.stroke()
+                
+                let tile = board[row, index]!
+                switch tile {
+                case .empty:
+                    break
+                case .red(let number):
+                    addCircleView(at: pointInViewFrame(forCircleInRow: row, atIndex: index),
+                                  backgroundColor: .red,
+                                  number: number)
+                case .blue(let number):
+                    addCircleView(at: pointInViewFrame(forCircleInRow: row, atIndex: index),
+                                  backgroundColor: .blue,
+                                  number: number)
+                }
             }
         }
         
-        self.subviews.forEach { $0.removeFromSuperview() }
     }
     
     func pointInBoardFrame(forCircleInRow row: Int, atIndex index: Int) -> CGPoint {
