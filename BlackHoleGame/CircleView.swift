@@ -6,15 +6,7 @@ class CircleView: UILabel {
             setNeedsDisplay()
         }
     }
-    
-    override func draw(_ rect: CGRect) {
-        let fontSize = fontSizeThatFits(size: bounds.size, text: "\(number)" as NSString, font: UIFont.systemFont(ofSize: 0)) * 0.7
-        let font = UIFont.systemFont(ofSize: fontSize)
-        ("\(number)" as NSString).draw(in: bounds,
-                                       withAttributes: [.font: font, .foregroundColor: UIColor.white])
-        
-    }
-    
+
     func commonInit() {
         layer.cornerRadius = bounds.width / 2
         isUserInteractionEnabled = false
