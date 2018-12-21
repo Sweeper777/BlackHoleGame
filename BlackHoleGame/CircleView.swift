@@ -3,7 +3,9 @@ import UIKit
 class CircleView: UILabel {
     var number = 1 {
         didSet {
-            setNeedsDisplay()
+            let fontSize = fontSizeThatFits(size: bounds.size, text: "\(number)" as NSString, font: UIFont.systemFont(ofSize: 0)) * 0.7
+            font = UIFont.systemFont(ofSize: fontSize)
+            text = "\(number)"
         }
     }
 
