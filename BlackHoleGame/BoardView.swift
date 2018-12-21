@@ -79,12 +79,17 @@ class BoardView: UIView {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let point = touches.first?.location(in: self) else { return }
         let pointInBoardFrame = CGPoint(x: point.x - actualBoardFrame.origin.x, y: point.y - actualBoardFrame.origin.y)
-        guard pointInBoardFrame.y >= 0 else { return }
-        let touchedRow = Int(pointInBoardFrame.y / circleDiameter)
-        let rowStart = self.pointInBoardFrame(forCircleInRow: touchedRow, atIndex: 0).x
-        let rowEnd = self.pointInBoardFrame(forCircleInRow: touchedRow, atIndex: touchedRow).x + circleDiameter
-        guard pointInBoardFrame.x >= rowStart && pointInBoardFrame.x <= rowEnd else { return }
-        let touchedIndex = Int((pointInBoardFrame.x - rowStart) / circleDiameter)
+        let R = circleDiameter / 2
+        let transform = CGAffineTransform(translationX: R, y: R)
+        let s3 = CGFloat(sqrt(3))
+        let centerOfFirstCircle = self.pointInBoardFrame(forCircleInRow: 0, atIndex: 0).applying(transform)
+        let x = pointInBoardFrame.x - centerOfFirstCircle.x
+        let y = pointInBoardFrame.y - centerOfFirstCircle.y
+        let denominator = 2*R*s3
+        let a = -x / (2*R) + y / denominator
+        let b = x / (2*R) +  y / denominator
+        let touchedRow = (Int(a.rounded()) + Int(b.rounded()))
+        let touchedIndex = Int(b.rounded())
         delegate?.didTouchCircle(inRow: touchedRow, atIndex: touchedIndex)
     }
     
