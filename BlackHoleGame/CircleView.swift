@@ -1,6 +1,6 @@
 import UIKit
 
-class CircleView: UIView {
+class CircleView: UILabel {
     var number = 1 {
         didSet {
             setNeedsDisplay()
