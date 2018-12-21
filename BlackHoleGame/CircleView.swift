@@ -19,6 +19,8 @@ class CircleView: UILabel {
         layer.cornerRadius = bounds.width / 2
         isUserInteractionEnabled = false
         clipsToBounds = true
+        textColor = .white
+        textAlignment = .center
     }
     
     override init(frame: CGRect) {
