@@ -48,11 +48,13 @@ class BoardView: UIView {
                 case .empty:
                     break
                 case .red(let number):
-                    addCircleView(at: pointInViewFrame(forCircleInRow: row, atIndex: index),
+                    addCircleView(inRow: row,
+                                  atIndex: index,
                                   backgroundColor: .red,
                                   number: number)
                 case .blue(let number):
-                    addCircleView(at: pointInViewFrame(forCircleInRow: row, atIndex: index),
+                    addCircleView(inRow: row,
+                                  atIndex: index,
                                   backgroundColor: .blue,
                                   number: number)
                 }
