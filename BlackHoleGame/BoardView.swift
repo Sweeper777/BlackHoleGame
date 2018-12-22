@@ -76,6 +76,13 @@ class BoardView: UIView {
         return CGPoint(x: point.x + actualBoardFrame.origin.x, y: point.y + actualBoardFrame.origin.y)
     }
     
+    func frameForCircleView(inRow row: Int, atIndex index: Int) -> CGRect {
+        let transform = CGAffineTransform(translationX: 1.5, y: 1.5)
+        let point = pointInViewFrame(forCircleInRow: row, atIndex: index).applying(transform)
+        let size = CGSize(width: circleDiameter - 3, height: circleDiameter - 3)
+        return CGRect(origin: point, size: size)
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let point = touches.first?.location(in: self) else { return }
         let pointInBoardFrame = CGPoint(x: point.x - actualBoardFrame.origin.x, y: point.y - actualBoardFrame.origin.y)
