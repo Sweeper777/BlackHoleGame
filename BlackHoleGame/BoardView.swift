@@ -100,8 +100,8 @@ class BoardView: UIView {
         delegate?.didTouchCircle(inRow: touchedRow, atIndex: touchedIndex)
     }
     
-    func addCircleView(at point: CGPoint, backgroundColor: UIColor, number: Int) {
-        let circleView = CircleView(frame: CGRect(origin: point, size: CGSize(width: circleDiameter, height: circleDiameter)))
+    func addCircleView(inRow row: Int, atIndex index: Int, backgroundColor: UIColor, number: Int) {
+        let circleView = CircleView(frame: frameForCircleView(inRow: row, atIndex: index))
         circleView.backgroundColor = backgroundColor
         circleView.number = number
         self.addSubview(circleView)
