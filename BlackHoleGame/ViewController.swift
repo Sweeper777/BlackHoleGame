@@ -15,6 +15,16 @@ class ViewController: UIViewController, BoardViewDelegate {
         view.addSubview(board)
     }
     
+    func searchDepth(forTurn turn: Int) -> Int {
+        if turn < 10 {
+            return 3
+        }
+        if turn < 14 {
+            return 4
+        }
+        return 6
+    }
+    
     func didTouchCircle(inRow row: Int, atIndex index: Int) {
         game.makeMove(row: row, index: index)
         board.board = game.board
