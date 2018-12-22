@@ -26,6 +26,10 @@ class ViewController: UIViewController, BoardViewDelegate {
     }
     
     func didTouchCircle(inRow row: Int, atIndex index: Int) {
+        if game.currentTurn != .red || game.checkWin() != .undecided {
+            return
+        }
+        
         game.makeMove(row: row, index: index)
         board.board = game.board
     }
