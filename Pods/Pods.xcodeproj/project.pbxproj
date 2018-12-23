@@ -1,0 +1,1118 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0691B4697008A0E2EE3C8AD9FB9EBDE2 /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155341899E4556113F4F9B2681420479 /* CGRectExtensions.swift */; };
+		0E1F13203515484D4D8BE8670DF1B940 /* Animation.h in Headers */ = {isa = PBXBuildFile; fileRef = B568C43FC4BE0225A65AD89A9D5AFA9F /* Animation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15C980B39366DE1E1B6668FC274CCF7E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC002444A07357347ECB48641D0ED59 /* Constants.swift */; };
+		16D56692364D8609DF2593CEB015CFE0 /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064174FBCB49E529FD63954997BF3ED7 /* Occupiable.swift */; };
+		31EDE6F953C84610055BDD7FE69616B6 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3238A5B14C617DF3C7CB921F5110A725 /* BundleExtension.swift */; };
+		363F271BCE3A93177C9E6F52E8D42EA4 /* CGSizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15ECB636A5B3D62A7F7A6643316F506 /* CGSizeExtension.swift */; };
+		3710C8A11D25036BA7006A185225B914 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26212AA1BAF4C9BE3AC59F9259E385C0 /* Animation.swift */; };
+		456F55A9A9929C2D20B7A0E12686DECC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		474C4C391CF0B95045EED321B30B48F4 /* UISwitchExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9F8AB4B417DBA67FCFA1D6B00362D /* UISwitchExtension.swift */; };
+		4F274D21E98376BBA468460EB5A2F59D /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EC2DFEBCE212B00A781344AB9D0AB4 /* DictionaryExtension.swift */; };
+		4F4AA18415E38E8DBC317D4FCE141063 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E2F7B70DCCBCE12475EDAF426B1107 /* Injectable.swift */; };
+		523D2A5254B113FBCC9F60F33197299B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		523FD5DBF1CAD606F41D7824A436EB8A /* Pods-BlackHoleGame-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00AE186ACAAA2B408DE420D4FA0C3CE1 /* Pods-BlackHoleGame-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		533C18855155E5B312EF620EA13B51F6 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D6AEDECA2D94C56C98B83888EC8B53 /* UITextFieldExtension.swift */; };
+		55E8D7E7E5CB770D3FD23DC15E1654E9 /* Iteratable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849887722A67FEF3F3C6289690B0D100 /* Iteratable.swift */; };
+		5620CF509EB24F081FBE27315732AD96 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3398D987FEF3EEB192DB5FCDD420015D /* UILabelExtension.swift */; };
+		573F341EC7B4AB6A262611AF68D840D9 /* Pods-BlackHoleGameTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF71FB161E91D2E81F213B46461A72A8 /* Pods-BlackHoleGameTests-dummy.m */; };
+		5AD5063C14D0D96AC14B57FFE7EF8BBC /* UnitTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED4A56E3CBC94150F01DEA6E8CA87BE /* UnitTesting.swift */; };
+		6212854E1F1C7699ABBF6789B71117DC /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7F5DB41D8B9364AEE2E6DDE2272D70 /* UIScreenExtension.swift */; };
+		63D50858BA25905E95C4F0BB0F6EA23B /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DAE8569214B623BBBB4DD9C5B51BCA2 /* NSObjectExtension.swift */; };
+		682D832D611E49A1F6EAC32BE798066C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F15BFC83346858BF0E318747CFE320 /* UIViewControllerExtension.swift */; };
+		6EF02583D0862748A6F0BA93AB9904AB /* Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEF36092E7BE1DEEB1E0C0E73734CCF /* Curve.swift */; };
+		79747754D9A8DABD18F7CD7C60C8848B /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1FA0CA684633B60E7D71B250A899E1 /* Then.swift */; };
+		7ADD4B91694303CFBFDB1B9DD99C430A /* Animation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1722D8A3481E3EEABB0CA1D3AEE6005A /* Animation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C601840975D263C4E5EF1EB9969AFA7 /* CGFloatLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C602289BD31EA067A60C8A4653534D /* CGFloatLiteral.swift */; };
+		8054D3C3225F6C2647DB9B369454EFFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		90C419BE8849EB81B204808F467FE2A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		9404CBF394D8C65209DA0F3B76AA2B55 /* Interpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B162EF6990AD6E2C30686D0B0AEE1F /* Interpolation.swift */; };
+		960817ECF66FB91C5B4F3B69FB694205 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E8A72C774A519C72475686E2562152 /* UIDeviceExtension.swift */; };
+		96C727620ECB282476BCF0813CF6D120 /* FileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29C6BE8801F9D162114305D50EF62B0B /* FileManagerExtension.swift */; };
+		A09DCAC17CE8C62F68514052E89A0FCE /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BA9EC02A3D2744CD0C0FBF6F470EFA /* UIApplicationExtension.swift */; };
+		A4C3E5DE8869336CD7DA294DD451D347 /* TimerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F068A12EE705EE43112520EC1F0EE72 /* TimerExtension.swift */; };
+		ABB833882F1045F69947DD2486EBF363 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59055FE7C9243109240F9B35AFBA5928 /* URLExtension.swift */; };
+		B53077F86E170AFAF304A6DB2FE79C20 /* NotificationCenterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C595321B404DAFDEF341266620E7DAE6 /* NotificationCenterExtension.swift */; };
+		B582EFBF24FBDD08458BC8AED903DAAC /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E841B77ABA979CBAC1C8DEFFCFFBFC2 /* IntExtension.swift */; };
+		B894BB41324C004E952312098A4A4B20 /* SwiftyUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F923C9769D1BC19ADD0941353D6FF86 /* SwiftyUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8F14E8B090F8AE4B9117094F6AC5205 /* Pods-BlackHoleGameTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CDE749788F552793492EF7A032A250 /* Pods-BlackHoleGameTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA03590309DA1E62A7760F3832D4B98D /* NSRangeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB282339854C5D0F35D819A7AD967080 /* NSRangeExtension.swift */; };
+		BC63E5BA0786BE6AD5C688DE982A6491 /* Pods-BlackHoleGame-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D96975101A6868935B15DECE520C52 /* Pods-BlackHoleGame-dummy.m */; };
+		C0BA64FECA74613DE9F73F9419558B74 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55BA03CC9A0DDA6D04A3BE8ECBFF102 /* UIStoryboardExtension.swift */; };
+		C284CBA278A221AD5FB57CB57F883BF7 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C0445671E471A664EA7411693D0871 /* UIViewExtension.swift */; };
+		C54F34E28D798D5798B266EC69D361C3 /* ReusableFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C394FEC629E3CBD68EBBB3AD94F09E07 /* ReusableFormatters.swift */; };
+		CA90DCB0431DDACB6F96CBAB7A1308DD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACB21F511AE8710470341B456FA2512 /* StringExtension.swift */; };
+		CC5F1EEA4493F7A56111153314AE3DED /* SwiftyUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DFDBDEDC1353C78E2C9FA64574B6EC /* SwiftyUtils-dummy.m */; };
+		D2627DA2BA30D9CA08CA738B9B2B0BD7 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD8C5C438D3297B3BA10D20526C1B2 /* ArrayExtension.swift */; };
+		D269ADB7FA4CAEAFC9EC182DF0FA9D30 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F6A3CABC83D7C8F97133D12A3B7DF3 /* DoubleExtension.swift */; };
+		D45FC3D1F14C478D0193A4BAF03D50A8 /* UIAlertControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F944C7041E0472D22595AEC47C93F5 /* UIAlertControllerExtension.swift */; };
+		D6F16BE1E1D4D7DF27941A0D22235D6D /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6CA68B84E116E32D9650CEFFD8DA1D /* Simulator.swift */; };
+		D8779AE6D23B8BBAB4D61B3BBBE038EE /* UITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3888D53ABA053609171D50C28FD53143 /* UITesting.swift */; };
+		DE8F53697850D283B5768BE02B749C4C /* NSLayoutConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18178EF18CC27D56E7D6CBABC66BA8F9 /* NSLayoutConstraintsExtension.swift */; };
+		E163E2A23D5B31A1FEE9CE7AFC0AFA18 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746CF84025BF6E51CD06EAEAD5AE3F85 /* UIImageExtension.swift */; };
+		E810F2C11FC0586F51B6669E6F657F5D /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E98E3088D898199C7E376F5E671F4FA /* CGPointExtension.swift */; };
+		F3026A3A83E30E4377DAB7E2AD2D1846 /* Animation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B458ED4A900F84FB1E227B94C0E6DC8 /* Animation-dummy.m */; };
+		F37FFE87C12932075B3D1576CB7ABCBE /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85FE43DE0072E0F5A3DEFA180F3E55F /* DateExtension.swift */; };
+		F428A9E640A63BB08AA443408580AB0C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8671DD4A4CA314E58E1FB25C54882BFF /* ColorExtension.swift */; };
+		F8DD614A845B2935A5486B3395D4B0C5 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45470CC84F11FD91C7BE9091CC1F5A58 /* UserDefaultsExtension.swift */; };
+		FEE71655DF3CA3ED4D3DFB8B1618C4B9 /* NSMutableAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7C16A1CF1B76ED1BE1B9DB8342E383C /* NSMutableAttributedStringExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E1A75E67455550F1931070B9034E3D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE262F514593746B79AF71C85514C792;
+			remoteInfo = "Pods-BlackHoleGame";
+		};
+		BAE739F708B64CAA5D83496F05FF5014 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 429CFD23EFAE92C4195FB7D3B9F48726;
+			remoteInfo = Animation;
+		};
+		F6804203983EAAB23B60B5A5DA920A6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 930BDD54BD9A1874B09EC405AD931F47;
+			remoteInfo = SwiftyUtils;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00AE186ACAAA2B408DE420D4FA0C3CE1 /* Pods-BlackHoleGame-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlackHoleGame-umbrella.h"; sourceTree = "<group>"; };
+		03BA9EC02A3D2744CD0C0FBF6F470EFA /* UIApplicationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIApplicationExtension.swift; path = Sources/Extensions/UIKit/UIApplicationExtension.swift; sourceTree = "<group>"; };
+		05CDE749788F552793492EF7A032A250 /* Pods-BlackHoleGameTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BlackHoleGameTests-umbrella.h"; sourceTree = "<group>"; };
+		064174FBCB49E529FD63954997BF3ED7 /* Occupiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Occupiable.swift; path = Sources/Protocols/Occupiable.swift; sourceTree = "<group>"; };
+		065E72A432E05BA250933BED7FBAB983 /* Pods-BlackHoleGameTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlackHoleGameTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		09E2F7B70DCCBCE12475EDAF426B1107 /* Injectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Injectable.swift; path = Sources/Protocols/Injectable.swift; sourceTree = "<group>"; };
+		0ACB21F511AE8710470341B456FA2512 /* StringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = Sources/Extensions/StringExtension.swift; sourceTree = "<group>"; };
+		0CD6F69EA4DF95B649095082F6654FD8 /* Animation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Animation.xcconfig; sourceTree = "<group>"; };
+		0DB9F8AB4B417DBA67FCFA1D6B00362D /* UISwitchExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UISwitchExtension.swift; path = Sources/Extensions/UIKit/UISwitchExtension.swift; sourceTree = "<group>"; };
+		155341899E4556113F4F9B2681420479 /* CGRectExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectExtensions.swift; path = Sources/Extensions/CGRectExtensions.swift; sourceTree = "<group>"; };
+		16DD3E564FF600D4EC95357AB4E83F64 /* Pods-BlackHoleGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlackHoleGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1722D8A3481E3EEABB0CA1D3AEE6005A /* Animation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Animation-umbrella.h"; sourceTree = "<group>"; };
+		18178EF18CC27D56E7D6CBABC66BA8F9 /* NSLayoutConstraintsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSLayoutConstraintsExtension.swift; path = Sources/Extensions/NSLayoutConstraintsExtension.swift; sourceTree = "<group>"; };
+		24C0445671E471A664EA7411693D0871 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = Sources/Extensions/UIKit/UIViewExtension.swift; sourceTree = "<group>"; };
+		2509F0F45356BB5881A30399F642BE01 /* Pods-BlackHoleGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlackHoleGame-acknowledgements.markdown"; sourceTree = "<group>"; };
+		26212AA1BAF4C9BE3AC59F9259E385C0 /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = Animation/Animation.swift; sourceTree = "<group>"; };
+		28D96975101A6868935B15DECE520C52 /* Pods-BlackHoleGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlackHoleGame-dummy.m"; sourceTree = "<group>"; };
+		29C6BE8801F9D162114305D50EF62B0B /* FileManagerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileManagerExtension.swift; path = Sources/Extensions/FileManagerExtension.swift; sourceTree = "<group>"; };
+		2A77C0E7CB68428C1B14620DC6A2AC62 /* Pods_BlackHoleGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackHoleGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3238A5B14C617DF3C7CB921F5110A725 /* BundleExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BundleExtension.swift; path = Sources/Extensions/BundleExtension.swift; sourceTree = "<group>"; };
+		3398D987FEF3EEB192DB5FCDD420015D /* UILabelExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UILabelExtension.swift; path = Sources/Extensions/UIKit/UILabelExtension.swift; sourceTree = "<group>"; };
+		3603F4E126836B4B63C70E3D9DD3A65C /* Pods-BlackHoleGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlackHoleGame.release.xcconfig"; sourceTree = "<group>"; };
+		3888D53ABA053609171D50C28FD53143 /* UITesting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITesting.swift; path = Sources/Others/UITesting.swift; sourceTree = "<group>"; };
+		39F0023D4340468FCD24421783442121 /* Pods-BlackHoleGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlackHoleGame.debug.xcconfig"; sourceTree = "<group>"; };
+		3D6CA68B84E116E32D9650CEFFD8DA1D /* Simulator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Simulator.swift; path = Sources/Others/UIKit/Simulator.swift; sourceTree = "<group>"; };
+		45470CC84F11FD91C7BE9091CC1F5A58 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserDefaultsExtension.swift; path = Sources/Extensions/UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		48C87EA54C330A6E891DD1D2588130D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B458ED4A900F84FB1E227B94C0E6DC8 /* Animation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Animation-dummy.m"; sourceTree = "<group>"; };
+		4BD85C837124C4E2FD8FFA3F0408B41F /* Pods-BlackHoleGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BlackHoleGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		4DC002444A07357347ECB48641D0ED59 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Sources/Constants.swift; sourceTree = "<group>"; };
+		50B162EF6990AD6E2C30686D0B0AEE1F /* Interpolation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpolation.swift; path = Animation/Interpolation.swift; sourceTree = "<group>"; };
+		58EC1472252A43578DF4308F999A2C70 /* Pods_BlackHoleGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackHoleGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59055FE7C9243109240F9B35AFBA5928 /* URLExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLExtension.swift; path = Sources/Extensions/URLExtension.swift; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A188A0EEBD11DFF9D19697ED8631039 /* SwiftyUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ED4A56E3CBC94150F01DEA6E8CA87BE /* UnitTesting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnitTesting.swift; path = Sources/Others/UnitTesting.swift; sourceTree = "<group>"; };
+		6A90757989CB500546EE326A67CA7AF3 /* Pods-BlackHoleGameTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlackHoleGameTests-frameworks.sh"; sourceTree = "<group>"; };
+		6E98E3088D898199C7E376F5E671F4FA /* CGPointExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPointExtension.swift; path = Sources/Extensions/CGPointExtension.swift; sourceTree = "<group>"; };
+		7001D78D775F46E0A712E757D0296411 /* Pods-BlackHoleGame-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlackHoleGame-acknowledgements.plist"; sourceTree = "<group>"; };
+		70A5EE5C5CB4967617E0790BABC206FA /* Animation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Animation.modulemap; sourceTree = "<group>"; };
+		736167C270CF3D0B34DF2F159A0C8E06 /* SwiftyUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyUtils.modulemap; sourceTree = "<group>"; };
+		746CF84025BF6E51CD06EAEAD5AE3F85 /* UIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = Sources/Extensions/UIKit/UIImageExtension.swift; sourceTree = "<group>"; };
+		76E8A72C774A519C72475686E2562152 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIDeviceExtension.swift; path = Sources/Extensions/UIKit/UIDeviceExtension.swift; sourceTree = "<group>"; };
+		78481D9924B36FF9AEE4A6D7374DE630 /* Pods-BlackHoleGameTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlackHoleGameTests-resources.sh"; sourceTree = "<group>"; };
+		7F068A12EE705EE43112520EC1F0EE72 /* TimerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TimerExtension.swift; path = Sources/Extensions/TimerExtension.swift; sourceTree = "<group>"; };
+		7F923C9769D1BC19ADD0941353D6FF86 /* SwiftyUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyUtils-umbrella.h"; sourceTree = "<group>"; };
+		81C602289BD31EA067A60C8A4653534D /* CGFloatLiteral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGFloatLiteral.swift; path = Sources/Extensions/CGFloatLiteral.swift; sourceTree = "<group>"; };
+		849887722A67FEF3F3C6289690B0D100 /* Iteratable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Iteratable.swift; path = Sources/Protocols/Iteratable.swift; sourceTree = "<group>"; };
+		858601367796CF8F45AB4ACFF3DC7ECB /* SwiftyUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyUtils.xcconfig; sourceTree = "<group>"; };
+		8671DD4A4CA314E58E1FB25C54882BFF /* ColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorExtension.swift; path = Sources/Extensions/ColorExtension.swift; sourceTree = "<group>"; };
+		90DFDBDEDC1353C78E2C9FA64574B6EC /* SwiftyUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyUtils-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DAE8569214B623BBBB4DD9C5B51BCA2 /* NSObjectExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSObjectExtension.swift; path = Sources/Extensions/UIKit/NSObjectExtension.swift; sourceTree = "<group>"; };
+		9E841B77ABA979CBAC1C8DEFFCFFBFC2 /* IntExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntExtension.swift; path = Sources/Extensions/IntExtension.swift; sourceTree = "<group>"; };
+		A1EC2DFEBCE212B00A781344AB9D0AB4 /* DictionaryExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryExtension.swift; path = Sources/Extensions/DictionaryExtension.swift; sourceTree = "<group>"; };
+		A7C16A1CF1B76ED1BE1B9DB8342E383C /* NSMutableAttributedStringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSMutableAttributedStringExtension.swift; path = Sources/Extensions/NSMutableAttributedStringExtension.swift; sourceTree = "<group>"; };
+		AAD81C0692D758B408706122A9795255 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD7F5DB41D8B9364AEE2E6DDE2272D70 /* UIScreenExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIScreenExtension.swift; path = Sources/Extensions/UIKit/UIScreenExtension.swift; sourceTree = "<group>"; };
+		AFFD9C71257EC09FBA7E73FA52EC32B7 /* SwiftyUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyUtils-prefix.pch"; sourceTree = "<group>"; };
+		B4C2B5BA3EEF524FE9D7CBEC70E2C461 /* Pods-BlackHoleGame-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlackHoleGame-resources.sh"; sourceTree = "<group>"; };
+		B568C43FC4BE0225A65AD89A9D5AFA9F /* Animation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Animation.h; path = Animation/Animation.h; sourceTree = "<group>"; };
+		B7F15BFC83346858BF0E318747CFE320 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = Sources/Extensions/UIKit/UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		B85FE43DE0072E0F5A3DEFA180F3E55F /* DateExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateExtension.swift; path = Sources/Extensions/DateExtension.swift; sourceTree = "<group>"; };
+		C15ECB636A5B3D62A7F7A6643316F506 /* CGSizeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGSizeExtension.swift; path = Sources/Extensions/CGSizeExtension.swift; sourceTree = "<group>"; };
+		C394FEC629E3CBD68EBBB3AD94F09E07 /* ReusableFormatters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReusableFormatters.swift; path = Sources/Extensions/ReusableFormatters.swift; sourceTree = "<group>"; };
+		C595321B404DAFDEF341266620E7DAE6 /* NotificationCenterExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationCenterExtension.swift; path = Sources/Extensions/NotificationCenterExtension.swift; sourceTree = "<group>"; };
+		C7F944C7041E0472D22595AEC47C93F5 /* UIAlertControllerExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIAlertControllerExtension.swift; path = Sources/Extensions/UIKit/UIAlertControllerExtension.swift; sourceTree = "<group>"; };
+		C9D6AEDECA2D94C56C98B83888EC8B53 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITextFieldExtension.swift; path = Sources/Extensions/UIKit/UITextFieldExtension.swift; sourceTree = "<group>"; };
+		CE17DB63D9D5DA07B01E03D91CE27AB4 /* Pods-BlackHoleGameTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlackHoleGameTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CE389E4A1E5D7749EF0CD5BA71E1AF01 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8602E4EDC16160E064FBE3AFE8CE3A9 /* Pods-BlackHoleGame-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BlackHoleGame-frameworks.sh"; sourceTree = "<group>"; };
+		DAEF36092E7BE1DEEB1E0C0E73734CCF /* Curve.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Curve.swift; path = Animation/Curve.swift; sourceTree = "<group>"; };
+		DB1FA0CA684633B60E7D71B250A899E1 /* Then.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Then.swift; path = Sources/Protocols/Then.swift; sourceTree = "<group>"; };
+		DDC0AAFEE45D40E124812EDC767B949D /* Pods-BlackHoleGameTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BlackHoleGameTests.modulemap"; sourceTree = "<group>"; };
+		DEFD8C5C438D3297B3BA10D20526C1B2 /* ArrayExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayExtension.swift; path = Sources/Extensions/ArrayExtension.swift; sourceTree = "<group>"; };
+		E06FD4271B27362716F80CE6200B808F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E13AB6019983189E29736130AE77088C /* Pods-BlackHoleGame.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BlackHoleGame.modulemap"; sourceTree = "<group>"; };
+		E9634FE6765EFD285BA53A32FDE13B9A /* Animation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Animation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF71FB161E91D2E81F213B46461A72A8 /* Pods-BlackHoleGameTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlackHoleGameTests-dummy.m"; sourceTree = "<group>"; };
+		F2F6A3CABC83D7C8F97133D12A3B7DF3 /* DoubleExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DoubleExtension.swift; path = Sources/Extensions/DoubleExtension.swift; sourceTree = "<group>"; };
+		F55BA03CC9A0DDA6D04A3BE8ECBFF102 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIStoryboardExtension.swift; path = Sources/Extensions/UIKit/UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		F99F5C06E867F4A149940AFBAF19A3F6 /* Animation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Animation-prefix.pch"; sourceTree = "<group>"; };
+		FB282339854C5D0F35D819A7AD967080 /* NSRangeExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSRangeExtension.swift; path = Sources/Extensions/NSRangeExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34DDE3DCA178DCF37FA30ABA81B9A517 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8054D3C3225F6C2647DB9B369454EFFD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EAE90030A586C1AFFF55C77795EB833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456F55A9A9929C2D20B7A0E12686DECC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B386CB2D5CE379A74211887C0B6BBCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C419BE8849EB81B204808F467FE2A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEB49439143980683B21DB4068C95209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523D2A5254B113FBCC9F60F33197299B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13C0EC42BA559D84D276C13FBDD46B50 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				B568C43FC4BE0225A65AD89A9D5AFA9F /* Animation.h */,
+				26212AA1BAF4C9BE3AC59F9259E385C0 /* Animation.swift */,
+				DAEF36092E7BE1DEEB1E0C0E73734CCF /* Curve.swift */,
+				50B162EF6990AD6E2C30686D0B0AEE1F /* Interpolation.swift */,
+				1B0F3AF72045B522A700D82C6D2DFB94 /* Support Files */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		1B0F3AF72045B522A700D82C6D2DFB94 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				70A5EE5C5CB4967617E0790BABC206FA /* Animation.modulemap */,
+				0CD6F69EA4DF95B649095082F6654FD8 /* Animation.xcconfig */,
+				4B458ED4A900F84FB1E227B94C0E6DC8 /* Animation-dummy.m */,
+				F99F5C06E867F4A149940AFBAF19A3F6 /* Animation-prefix.pch */,
+				1722D8A3481E3EEABB0CA1D3AEE6005A /* Animation-umbrella.h */,
+				48C87EA54C330A6E891DD1D2588130D5 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Animation";
+			sourceTree = "<group>";
+		};
+		29328B837755BDF2FEA08AF831782B33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13C0EC42BA559D84D276C13FBDD46B50 /* Animation */,
+				DE62AFB81FBDF085362EE0CEA0945660 /* SwiftyUtils */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		61239171A56E58813D1F4BA2903512A9 /* Pods-BlackHoleGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE389E4A1E5D7749EF0CD5BA71E1AF01 /* Info.plist */,
+				DDC0AAFEE45D40E124812EDC767B949D /* Pods-BlackHoleGameTests.modulemap */,
+				CE17DB63D9D5DA07B01E03D91CE27AB4 /* Pods-BlackHoleGameTests-acknowledgements.markdown */,
+				065E72A432E05BA250933BED7FBAB983 /* Pods-BlackHoleGameTests-acknowledgements.plist */,
+				EF71FB161E91D2E81F213B46461A72A8 /* Pods-BlackHoleGameTests-dummy.m */,
+				6A90757989CB500546EE326A67CA7AF3 /* Pods-BlackHoleGameTests-frameworks.sh */,
+				78481D9924B36FF9AEE4A6D7374DE630 /* Pods-BlackHoleGameTests-resources.sh */,
+				05CDE749788F552793492EF7A032A250 /* Pods-BlackHoleGameTests-umbrella.h */,
+				16DD3E564FF600D4EC95357AB4E83F64 /* Pods-BlackHoleGameTests.debug.xcconfig */,
+				4BD85C837124C4E2FD8FFA3F0408B41F /* Pods-BlackHoleGameTests.release.xcconfig */,
+			);
+			name = "Pods-BlackHoleGameTests";
+			path = "Target Support Files/Pods-BlackHoleGameTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				29328B837755BDF2FEA08AF831782B33 /* Pods */,
+				9FEBAA75FDFF5A1A687D47DA413F2986 /* Products */,
+				C3D77ECB0813188DC9145D2E9A477B3D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9FEBAA75FDFF5A1A687D47DA413F2986 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9634FE6765EFD285BA53A32FDE13B9A /* Animation.framework */,
+				58EC1472252A43578DF4308F999A2C70 /* Pods_BlackHoleGame.framework */,
+				2A77C0E7CB68428C1B14620DC6A2AC62 /* Pods_BlackHoleGameTests.framework */,
+				5A188A0EEBD11DFF9D19697ED8631039 /* SwiftyUtils.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A97583305D3D631C54D88492AF5C91D2 /* Pods-BlackHoleGame */ = {
+			isa = PBXGroup;
+			children = (
+				AAD81C0692D758B408706122A9795255 /* Info.plist */,
+				E13AB6019983189E29736130AE77088C /* Pods-BlackHoleGame.modulemap */,
+				2509F0F45356BB5881A30399F642BE01 /* Pods-BlackHoleGame-acknowledgements.markdown */,
+				7001D78D775F46E0A712E757D0296411 /* Pods-BlackHoleGame-acknowledgements.plist */,
+				28D96975101A6868935B15DECE520C52 /* Pods-BlackHoleGame-dummy.m */,
+				D8602E4EDC16160E064FBE3AFE8CE3A9 /* Pods-BlackHoleGame-frameworks.sh */,
+				B4C2B5BA3EEF524FE9D7CBEC70E2C461 /* Pods-BlackHoleGame-resources.sh */,
+				00AE186ACAAA2B408DE420D4FA0C3CE1 /* Pods-BlackHoleGame-umbrella.h */,
+				39F0023D4340468FCD24421783442121 /* Pods-BlackHoleGame.debug.xcconfig */,
+				3603F4E126836B4B63C70E3D9DD3A65C /* Pods-BlackHoleGame.release.xcconfig */,
+			);
+			name = "Pods-BlackHoleGame";
+			path = "Target Support Files/Pods-BlackHoleGame";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCD4BD793617A0D7F7ED8D820FBF0D6D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E06FD4271B27362716F80CE6200B808F /* Info.plist */,
+				736167C270CF3D0B34DF2F159A0C8E06 /* SwiftyUtils.modulemap */,
+				858601367796CF8F45AB4ACFF3DC7ECB /* SwiftyUtils.xcconfig */,
+				90DFDBDEDC1353C78E2C9FA64574B6EC /* SwiftyUtils-dummy.m */,
+				AFFD9C71257EC09FBA7E73FA52EC32B7 /* SwiftyUtils-prefix.pch */,
+				7F923C9769D1BC19ADD0941353D6FF86 /* SwiftyUtils-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyUtils";
+			sourceTree = "<group>";
+		};
+		C3D77ECB0813188DC9145D2E9A477B3D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A97583305D3D631C54D88492AF5C91D2 /* Pods-BlackHoleGame */,
+				61239171A56E58813D1F4BA2903512A9 /* Pods-BlackHoleGameTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DE62AFB81FBDF085362EE0CEA0945660 /* SwiftyUtils */ = {
+			isa = PBXGroup;
+			children = (
+				DEFD8C5C438D3297B3BA10D20526C1B2 /* ArrayExtension.swift */,
+				3238A5B14C617DF3C7CB921F5110A725 /* BundleExtension.swift */,
+				81C602289BD31EA067A60C8A4653534D /* CGFloatLiteral.swift */,
+				6E98E3088D898199C7E376F5E671F4FA /* CGPointExtension.swift */,
+				155341899E4556113F4F9B2681420479 /* CGRectExtensions.swift */,
+				C15ECB636A5B3D62A7F7A6643316F506 /* CGSizeExtension.swift */,
+				8671DD4A4CA314E58E1FB25C54882BFF /* ColorExtension.swift */,
+				4DC002444A07357347ECB48641D0ED59 /* Constants.swift */,
+				B85FE43DE0072E0F5A3DEFA180F3E55F /* DateExtension.swift */,
+				A1EC2DFEBCE212B00A781344AB9D0AB4 /* DictionaryExtension.swift */,
+				F2F6A3CABC83D7C8F97133D12A3B7DF3 /* DoubleExtension.swift */,
+				29C6BE8801F9D162114305D50EF62B0B /* FileManagerExtension.swift */,
+				09E2F7B70DCCBCE12475EDAF426B1107 /* Injectable.swift */,
+				9E841B77ABA979CBAC1C8DEFFCFFBFC2 /* IntExtension.swift */,
+				849887722A67FEF3F3C6289690B0D100 /* Iteratable.swift */,
+				C595321B404DAFDEF341266620E7DAE6 /* NotificationCenterExtension.swift */,
+				18178EF18CC27D56E7D6CBABC66BA8F9 /* NSLayoutConstraintsExtension.swift */,
+				A7C16A1CF1B76ED1BE1B9DB8342E383C /* NSMutableAttributedStringExtension.swift */,
+				9DAE8569214B623BBBB4DD9C5B51BCA2 /* NSObjectExtension.swift */,
+				FB282339854C5D0F35D819A7AD967080 /* NSRangeExtension.swift */,
+				064174FBCB49E529FD63954997BF3ED7 /* Occupiable.swift */,
+				C394FEC629E3CBD68EBBB3AD94F09E07 /* ReusableFormatters.swift */,
+				3D6CA68B84E116E32D9650CEFFD8DA1D /* Simulator.swift */,
+				0ACB21F511AE8710470341B456FA2512 /* StringExtension.swift */,
+				DB1FA0CA684633B60E7D71B250A899E1 /* Then.swift */,
+				7F068A12EE705EE43112520EC1F0EE72 /* TimerExtension.swift */,
+				C7F944C7041E0472D22595AEC47C93F5 /* UIAlertControllerExtension.swift */,
+				03BA9EC02A3D2744CD0C0FBF6F470EFA /* UIApplicationExtension.swift */,
+				76E8A72C774A519C72475686E2562152 /* UIDeviceExtension.swift */,
+				746CF84025BF6E51CD06EAEAD5AE3F85 /* UIImageExtension.swift */,
+				3398D987FEF3EEB192DB5FCDD420015D /* UILabelExtension.swift */,
+				AD7F5DB41D8B9364AEE2E6DDE2272D70 /* UIScreenExtension.swift */,
+				F55BA03CC9A0DDA6D04A3BE8ECBFF102 /* UIStoryboardExtension.swift */,
+				0DB9F8AB4B417DBA67FCFA1D6B00362D /* UISwitchExtension.swift */,
+				3888D53ABA053609171D50C28FD53143 /* UITesting.swift */,
+				C9D6AEDECA2D94C56C98B83888EC8B53 /* UITextFieldExtension.swift */,
+				B7F15BFC83346858BF0E318747CFE320 /* UIViewControllerExtension.swift */,
+				24C0445671E471A664EA7411693D0871 /* UIViewExtension.swift */,
+				5ED4A56E3CBC94150F01DEA6E8CA87BE /* UnitTesting.swift */,
+				59055FE7C9243109240F9B35AFBA5928 /* URLExtension.swift */,
+				45470CC84F11FD91C7BE9091CC1F5A58 /* UserDefaultsExtension.swift */,
+				BCD4BD793617A0D7F7ED8D820FBF0D6D /* Support Files */,
+			);
+			path = SwiftyUtils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1B6E1F3F7A146F7EB5F31AD951DE9F98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ADD4B91694303CFBFDB1B9DD99C430A /* Animation-umbrella.h in Headers */,
+				0E1F13203515484D4D8BE8670DF1B940 /* Animation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AF0403FF668F9DA9D70B6BA573A9476 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B894BB41324C004E952312098A4A4B20 /* SwiftyUtils-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F32CC0AC53F553D1B46866F81642B0D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523FD5DBF1CAD606F41D7824A436EB8A /* Pods-BlackHoleGame-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F39B777B9D70BEEF45F78EC7E4DE11D2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8F14E8B090F8AE4B9117094F6AC5205 /* Pods-BlackHoleGameTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		429CFD23EFAE92C4195FB7D3B9F48726 /* Animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED60E6F1773671CBC94075D43FC295C /* Build configuration list for PBXNativeTarget "Animation" */;
+			buildPhases = (
+				1B6E1F3F7A146F7EB5F31AD951DE9F98 /* Headers */,
+				25F013BB255DA76731C163DB8D3B8D05 /* Sources */,
+				9B386CB2D5CE379A74211887C0B6BBCC /* Frameworks */,
+				4BD7FAC62F6D9A33B2FCA903AE91E0B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Animation;
+			productName = Animation;
+			productReference = E9634FE6765EFD285BA53A32FDE13B9A /* Animation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		930BDD54BD9A1874B09EC405AD931F47 /* SwiftyUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DD89C821D2AF20ED052C04F26488DB9 /* Build configuration list for PBXNativeTarget "SwiftyUtils" */;
+			buildPhases = (
+				5AF0403FF668F9DA9D70B6BA573A9476 /* Headers */,
+				B60ADE62F0BFB722F0F3D9E56CA578AA /* Sources */,
+				6EAE90030A586C1AFFF55C77795EB833 /* Frameworks */,
+				6690D36073D2D4DCBC6FF04CFCD12266 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyUtils;
+			productName = SwiftyUtils;
+			productReference = 5A188A0EEBD11DFF9D19697ED8631039 /* SwiftyUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A8B045F6937071520574D7563D28F148 /* Pods-BlackHoleGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1B5B450AC4B2D5D94C97BBAF586B064 /* Build configuration list for PBXNativeTarget "Pods-BlackHoleGameTests" */;
+			buildPhases = (
+				F39B777B9D70BEEF45F78EC7E4DE11D2 /* Headers */,
+				4D3EB7030EAC03AA057C326B800D966A /* Sources */,
+				34DDE3DCA178DCF37FA30ABA81B9A517 /* Frameworks */,
+				868E9F03EDD10179AB8A8097FD891A9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E2CE9F1E769A40A544201A16FD08F02 /* PBXTargetDependency */,
+			);
+			name = "Pods-BlackHoleGameTests";
+			productName = "Pods-BlackHoleGameTests";
+			productReference = 2A77C0E7CB68428C1B14620DC6A2AC62 /* Pods_BlackHoleGameTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EE262F514593746B79AF71C85514C792 /* Pods-BlackHoleGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 612412FD7453BFFF3D8AC1966FC67203 /* Build configuration list for PBXNativeTarget "Pods-BlackHoleGame" */;
+			buildPhases = (
+				F32CC0AC53F553D1B46866F81642B0D6 /* Headers */,
+				EC782FC21B128C0FF08ABDFA39DE440F /* Sources */,
+				BEB49439143980683B21DB4068C95209 /* Frameworks */,
+				94DD7F40BC172B11BA473A48C155A57B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52378B875769E9113155F9B89739E8D5 /* PBXTargetDependency */,
+				884F769740032371FE9A12F4C3085AC8 /* PBXTargetDependency */,
+			);
+			name = "Pods-BlackHoleGame";
+			productName = "Pods-BlackHoleGame";
+			productReference = 58EC1472252A43578DF4308F999A2C70 /* Pods_BlackHoleGame.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9FEBAA75FDFF5A1A687D47DA413F2986 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				429CFD23EFAE92C4195FB7D3B9F48726 /* Animation */,
+				EE262F514593746B79AF71C85514C792 /* Pods-BlackHoleGame */,
+				A8B045F6937071520574D7563D28F148 /* Pods-BlackHoleGameTests */,
+				930BDD54BD9A1874B09EC405AD931F47 /* SwiftyUtils */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BD7FAC62F6D9A33B2FCA903AE91E0B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6690D36073D2D4DCBC6FF04CFCD12266 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		868E9F03EDD10179AB8A8097FD891A9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94DD7F40BC172B11BA473A48C155A57B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25F013BB255DA76731C163DB8D3B8D05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3026A3A83E30E4377DAB7E2AD2D1846 /* Animation-dummy.m in Sources */,
+				3710C8A11D25036BA7006A185225B914 /* Animation.swift in Sources */,
+				6EF02583D0862748A6F0BA93AB9904AB /* Curve.swift in Sources */,
+				9404CBF394D8C65209DA0F3B76AA2B55 /* Interpolation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D3EB7030EAC03AA057C326B800D966A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				573F341EC7B4AB6A262611AF68D840D9 /* Pods-BlackHoleGameTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B60ADE62F0BFB722F0F3D9E56CA578AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2627DA2BA30D9CA08CA738B9B2B0BD7 /* ArrayExtension.swift in Sources */,
+				31EDE6F953C84610055BDD7FE69616B6 /* BundleExtension.swift in Sources */,
+				7C601840975D263C4E5EF1EB9969AFA7 /* CGFloatLiteral.swift in Sources */,
+				E810F2C11FC0586F51B6669E6F657F5D /* CGPointExtension.swift in Sources */,
+				0691B4697008A0E2EE3C8AD9FB9EBDE2 /* CGRectExtensions.swift in Sources */,
+				363F271BCE3A93177C9E6F52E8D42EA4 /* CGSizeExtension.swift in Sources */,
+				F428A9E640A63BB08AA443408580AB0C /* ColorExtension.swift in Sources */,
+				15C980B39366DE1E1B6668FC274CCF7E /* Constants.swift in Sources */,
+				F37FFE87C12932075B3D1576CB7ABCBE /* DateExtension.swift in Sources */,
+				4F274D21E98376BBA468460EB5A2F59D /* DictionaryExtension.swift in Sources */,
+				D269ADB7FA4CAEAFC9EC182DF0FA9D30 /* DoubleExtension.swift in Sources */,
+				96C727620ECB282476BCF0813CF6D120 /* FileManagerExtension.swift in Sources */,
+				4F4AA18415E38E8DBC317D4FCE141063 /* Injectable.swift in Sources */,
+				B582EFBF24FBDD08458BC8AED903DAAC /* IntExtension.swift in Sources */,
+				55E8D7E7E5CB770D3FD23DC15E1654E9 /* Iteratable.swift in Sources */,
+				B53077F86E170AFAF304A6DB2FE79C20 /* NotificationCenterExtension.swift in Sources */,
+				DE8F53697850D283B5768BE02B749C4C /* NSLayoutConstraintsExtension.swift in Sources */,
+				FEE71655DF3CA3ED4D3DFB8B1618C4B9 /* NSMutableAttributedStringExtension.swift in Sources */,
+				63D50858BA25905E95C4F0BB0F6EA23B /* NSObjectExtension.swift in Sources */,
+				BA03590309DA1E62A7760F3832D4B98D /* NSRangeExtension.swift in Sources */,
+				16D56692364D8609DF2593CEB015CFE0 /* Occupiable.swift in Sources */,
+				C54F34E28D798D5798B266EC69D361C3 /* ReusableFormatters.swift in Sources */,
+				D6F16BE1E1D4D7DF27941A0D22235D6D /* Simulator.swift in Sources */,
+				CA90DCB0431DDACB6F96CBAB7A1308DD /* StringExtension.swift in Sources */,
+				CC5F1EEA4493F7A56111153314AE3DED /* SwiftyUtils-dummy.m in Sources */,
+				79747754D9A8DABD18F7CD7C60C8848B /* Then.swift in Sources */,
+				A4C3E5DE8869336CD7DA294DD451D347 /* TimerExtension.swift in Sources */,
+				D45FC3D1F14C478D0193A4BAF03D50A8 /* UIAlertControllerExtension.swift in Sources */,
+				A09DCAC17CE8C62F68514052E89A0FCE /* UIApplicationExtension.swift in Sources */,
+				960817ECF66FB91C5B4F3B69FB694205 /* UIDeviceExtension.swift in Sources */,
+				E163E2A23D5B31A1FEE9CE7AFC0AFA18 /* UIImageExtension.swift in Sources */,
+				5620CF509EB24F081FBE27315732AD96 /* UILabelExtension.swift in Sources */,
+				6212854E1F1C7699ABBF6789B71117DC /* UIScreenExtension.swift in Sources */,
+				C0BA64FECA74613DE9F73F9419558B74 /* UIStoryboardExtension.swift in Sources */,
+				474C4C391CF0B95045EED321B30B48F4 /* UISwitchExtension.swift in Sources */,
+				D8779AE6D23B8BBAB4D61B3BBBE038EE /* UITesting.swift in Sources */,
+				533C18855155E5B312EF620EA13B51F6 /* UITextFieldExtension.swift in Sources */,
+				682D832D611E49A1F6EAC32BE798066C /* UIViewControllerExtension.swift in Sources */,
+				C284CBA278A221AD5FB57CB57F883BF7 /* UIViewExtension.swift in Sources */,
+				5AD5063C14D0D96AC14B57FFE7EF8BBC /* UnitTesting.swift in Sources */,
+				ABB833882F1045F69947DD2486EBF363 /* URLExtension.swift in Sources */,
+				F8DD614A845B2935A5486B3395D4B0C5 /* UserDefaultsExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC782FC21B128C0FF08ABDFA39DE440F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC63E5BA0786BE6AD5C688DE982A6491 /* Pods-BlackHoleGame-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E2CE9F1E769A40A544201A16FD08F02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-BlackHoleGame";
+			target = EE262F514593746B79AF71C85514C792 /* Pods-BlackHoleGame */;
+			targetProxy = 5E1A75E67455550F1931070B9034E3D7 /* PBXContainerItemProxy */;
+		};
+		52378B875769E9113155F9B89739E8D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Animation;
+			target = 429CFD23EFAE92C4195FB7D3B9F48726 /* Animation */;
+			targetProxy = BAE739F708B64CAA5D83496F05FF5014 /* PBXContainerItemProxy */;
+		};
+		884F769740032371FE9A12F4C3085AC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyUtils;
+			target = 930BDD54BD9A1874B09EC405AD931F47 /* SwiftyUtils */;
+			targetProxy = F6804203983EAAB23B60B5A5DA920A6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		263BFF9F2706C4686A2AA02432E6F79B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 858601367796CF8F45AB4ACFF3DC7ECB /* SwiftyUtils.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyUtils/SwiftyUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyUtils/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyUtils/SwiftyUtils.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyUtils;
+				PRODUCT_NAME = SwiftyUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3264BA7E5829D180E958C13E998C90A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3603F4E126836B4B63C70E3D9DD3A65C /* Pods-BlackHoleGame.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlackHoleGame/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlackHoleGame/Pods-BlackHoleGame.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		362C93F20BE2EE16E201A090A811145A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16DD3E564FF600D4EC95357AB4E83F64 /* Pods-BlackHoleGameTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlackHoleGameTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlackHoleGameTests/Pods-BlackHoleGameTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		40B45BB3CF3EE4476259302A7FAAD78F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		411478055B35C358F106FE7E5180E091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39F0023D4340468FCD24421783442121 /* Pods-BlackHoleGame.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlackHoleGame/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlackHoleGame/Pods-BlackHoleGame.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7100977AEDDF7FF01F80B3C79333E57C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD85C837124C4E2FD8FFA3F0408B41F /* Pods-BlackHoleGameTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BlackHoleGameTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BlackHoleGameTests/Pods-BlackHoleGameTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		731F3AEC059AFD9182A71E3E066AE4A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 858601367796CF8F45AB4ACFF3DC7ECB /* SwiftyUtils.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyUtils/SwiftyUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyUtils/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyUtils/SwiftyUtils.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyUtils;
+				PRODUCT_NAME = SwiftyUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		85ED3013A635C27F8B7FAF51362B108C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8901C9DC69C894634829932A741CA151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CD6F69EA4DF95B649095082F6654FD8 /* Animation.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Animation/Animation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Animation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Animation/Animation.modulemap";
+				PRODUCT_MODULE_NAME = Animation;
+				PRODUCT_NAME = Animation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA18B5ECFFB69933F848D5A8B92585C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CD6F69EA4DF95B649095082F6654FD8 /* Animation.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Animation/Animation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Animation/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Animation/Animation.modulemap";
+				PRODUCT_MODULE_NAME = Animation;
+				PRODUCT_NAME = Animation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85ED3013A635C27F8B7FAF51362B108C /* Debug */,
+				40B45BB3CF3EE4476259302A7FAAD78F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DD89C821D2AF20ED052C04F26488DB9 /* Build configuration list for PBXNativeTarget "SwiftyUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				731F3AEC059AFD9182A71E3E066AE4A9 /* Debug */,
+				263BFF9F2706C4686A2AA02432E6F79B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		612412FD7453BFFF3D8AC1966FC67203 /* Build configuration list for PBXNativeTarget "Pods-BlackHoleGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				411478055B35C358F106FE7E5180E091 /* Debug */,
+				3264BA7E5829D180E958C13E998C90A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1B5B450AC4B2D5D94C97BBAF586B064 /* Build configuration list for PBXNativeTarget "Pods-BlackHoleGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				362C93F20BE2EE16E201A090A811145A /* Debug */,
+				7100977AEDDF7FF01F80B3C79333E57C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FED60E6F1773671CBC94075D43FC295C /* Build configuration list for PBXNativeTarget "Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8901C9DC69C894634829932A741CA151 /* Debug */,
+				FA18B5ECFFB69933F848D5A8B92585C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
