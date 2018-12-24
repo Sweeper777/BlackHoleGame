@@ -31,17 +31,25 @@ class ViewController: UIViewController, BoardViewDelegate {
             return
         }
         
-        game.makeMove(row: row, index: index)
-        board.board = game.board
-        turn += 1
-        DispatchQueue.main.async {
-            [weak self] in
-            guard let `self` = self else { return }
-            let ai = GameAI(game: self.game, myColor: self.game.currentTurn)
-            let move = ai.getNextMove(searchDepth: self.searchDepth(forTurn: self.turn))
-            self.game.makeMove(row: move.row, index: move.index)
+        let color = game.currentTurn == .blue ? UIColor.blue : .red
+        let number = game.currentNumber
+        if game.makeMove(row: row, index: index) {
             self.board.board = self.game.board
-            self.turn += 1
+            turn += 1
+            DispatchQueue.main.async {
+                [weak self] in
+                guard let `self` = self else { return }
+                let ai = GameAI(game: self.game, myColor: self.game.currentTurn)
+                let move = ai.getNextMove(searchDepth: self.searchDepth(forTurn: self.turn))
+//                self.board.addCircleViewAnimated(inRow: move.row,
+//                                                 atIndex: move.index,
+//                                                 backgroundColor: self.game.currentTurn == .blue ? UIColor.blue : .red,
+//                                                 number: self.game.currentNumber,
+//                                                 completion: {})
+                self.game.makeMove(row: move.row, index: move.index)
+                self.board.board = self.game.board
+                self.turn += 1
+            }
         }
     }
 }
