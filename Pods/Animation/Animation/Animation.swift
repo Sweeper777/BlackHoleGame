@@ -10,6 +10,7 @@ import Foundation
 import QuartzCore
 
 public typealias AnimationUpdate = (Double) -> Bool
+public typealias AnimationUpdateToEnd = (Double) -> Void
 public typealias AnimationCompletion = (Bool) -> Void
 
 public protocol Animatable: class {
@@ -23,6 +24,7 @@ open class Animation
 	private var animationItems = [String : AnimationItem]()
 	private let displayLink: CADisplayLink?
 	private var animatables = [AnimatableProxy]()
+	private var previousTimestamp = 0.0
 
 	private class AnimationItem
 	{
@@ -61,13 +63,14 @@ open class Animation
 		displayLink = CADisplayLink(target: updater, selector: #selector(Updater.displayLinkUpdate(_:)))
 		displayLink?.isPaused = true
 		displayLink?.frameInterval = 1
-		displayLink?.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
+		displayLink?.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
 		updater.animationInstance = self
 	}
 
 	private func update(_ link: CADisplayLink) -> Void {
 		// Calculate the time delta
-		let timeDelta = link.duration * Double(link.frameInterval)
+		let timeDelta = previousTimestamp == 0.0 ? link.duration : link.timestamp - previousTimestamp
+		previousTimestamp = link.timestamp
 
 		// Update the active animations
 		updateAnimationItems(by: timeDelta)
@@ -78,6 +81,7 @@ open class Animation
 		// Stop the animation updates if there are no current animations
 		if((animatables.count + animationItems.count) == 0) {
 			displayLink?.isPaused = true
+			previousTimestamp = 0.0
 		}
 	}
 
@@ -169,7 +173,7 @@ open class Animation
 	/** Triggers an animation with an update closure and a completion closure.
 
 	The update closure will always get called at least once with progress 0.0, and will then be called
-	repeatedly with increasing values of progress up to 1.0, when the animation has ended.
+	repeatedly with increasing values of progress up to 1.0 when the animation has ended.
 	If the animation completes, it will be called with progress 1.0 before the completion closure is called.
 	Return true from the update closure to let the animation continue.
 	Returning false will cause the animation to be cancelled and the completion closure will be called immediately
@@ -181,12 +185,15 @@ open class Animation
 	  - identifier: A unique identifier for the animation.
 	  - duration: The duration of the animation in seconds.
 	  - update: The update closure.
-	  - completion: The optional completion closure, can be omitted.
+	  - completion: The optional completion closure; can be nil.
+
+	- seealso:
+	  - animate(identifier:duration:update:)
 	*/
 	open static func animate(identifier: String,
 	                         duration: Double,
 	                         update: @escaping AnimationUpdate,
-	                         completion: AnimationCompletion? = nil) {
+	                         completion: AnimationCompletion?) {
 		// Cancel any existing animation for this identifier
 		cancelAnimation(identifier: identifier)
 
@@ -202,6 +209,37 @@ open class Animation
 		let item = AnimationItem(duration: duration, update: update, completion: completion)
 		sharedInstance.animationItems[identifier] = item
 		sharedInstance.displayLink?.isPaused = false
+	}
+
+	/** Convenience method, calls animate(identifier:duration:update:completion:) with a nil completion handler.
+
+	This method allows the update closure to be specified with trailing closure syntax.
+	*/
+	open static func animate(identifier: String,
+	                         duration: Double,
+	                         update: @escaping AnimationUpdate) {
+		animate(identifier: identifier, duration: duration, update: update, completion: nil)
+	}
+
+	/** Convenience method, calls animate(identifier:duration:update:completion:)
+
+	This method uses the non-cancelable version of the update closure, that doesn't need a 'return' statement.
+	*/
+	open static func animateToEnd(identifier: String,
+	                              duration: Double,
+	                              update: @escaping AnimationUpdateToEnd,
+	                              completion: @escaping AnimationCompletion) {
+		animate(identifier: identifier, duration: duration, update: { p in update(p); return true } as AnimationUpdate, completion: completion)
+	}
+
+	/** Convenience method, calls animate(identifier:duration:update:completion:) with a nil completion handler.
+
+	This method uses the non-cancelable version of the update closure, that doesn't need a 'return' statement.
+	*/
+	open static func animateToEnd(identifier: String,
+	                              duration: Double,
+	                              update: @escaping AnimationUpdateToEnd) {
+		animate(identifier: identifier, duration: duration, update: { p in update(p); return true } as AnimationUpdate, completion: nil)
 	}
 
 	/** Cancels an animation that was triggered with the animate method.

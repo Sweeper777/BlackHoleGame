@@ -91,7 +91,10 @@ open class Curve: Parametric {
 
 	open static let zero                  = Curve(parametricFunction: {_ in return 0.0}) as Parametric
 	open static let one                   = Curve(parametricFunction: {_ in return 1.0}) as Parametric
-	open static let linear                = Curve(parametricFunction: {t in return t}) as Parametric
+	open static let linear                = Curve(parametricFunction: { $0 }) as Parametric
+	open static let clamp                 = Curve(parametricFunction: { $0 <= 0.0 ? 0.0 : $0 >= 1.0 ? 1.0 : $0 }) as Parametric
+	open static let loop                  = Curve(parametricFunction: { $0 - floor($0) }) as Parametric
+	open static let pingPong              = Curve(parametricFunction: { let (i, f) = modf(abs($0)); return Int(i) & 1 != 0 ? 1.0 - f : f}) as Parametric
 	open static let easeInEaseOut         = Curve(parametricFunction: curveEaseInEaseOut) as Parametric
 	open static let easeIn                = Curve(parametricFunction: curveEaseIn) as Parametric
 	open static let easeOut               = Curve(parametricFunction: curveEaseOut) as Parametric
@@ -210,6 +213,16 @@ open class CompositeCurve: Parametric {
 					throw ParseError.invalidArgumentType(message: "The parameter for 'O' must be (endPoint: Double, endValue: Double)")
 				}
 				try CompositeCurve.add(segment: Segment(endPoint: input.endPoint, endValue: input.endValue, curve: Curve.easeOut), to: &tmpSegments)
+			case "A": // ParabolicAcceleration
+				guard let input = args[idx] as? (endPoint: Double, endValue: Double) else {
+					throw ParseError.invalidArgumentType(message: "The parameter for 'A' must be (endPoint: Double, endValue: Double)")
+				}
+				try CompositeCurve.add(segment: Segment(endPoint: input.endPoint, endValue: input.endValue, curve: Curve.parabolicAcceleration), to: &tmpSegments)
+			case "D": // ParabolicDeceleration
+				guard let input = args[idx] as? (endPoint: Double, endValue: Double) else {
+					throw ParseError.invalidArgumentType(message: "The parameter for 'D' must be (endPoint: Double, endValue: Double)")
+				}
+				try CompositeCurve.add(segment: Segment(endPoint: input.endPoint, endValue: input.endValue, curve: Curve.parabolicDeceleration), to: &tmpSegments)
 			case "H": // Hermite
 				guard let input = args[idx] as? (endPoint: Double, endValue: Double, gradientIn: Double, gradientOut: Double) else {
 					throw ParseError.invalidArgumentType(message: "The parameter for 'H' must be (endPoint: Double, endValue: Double, gradientIn: Double, gradientOut: Double)")
@@ -218,7 +231,7 @@ open class CompositeCurve: Parametric {
 				try CompositeCurve.add(segment: Segment(endPoint: input.endPoint, endValue: input.endValue, curve: hermite), to: &tmpSegments)
 			case "C": // Curve
 				guard let input = args[idx] as? (endPoint: Double, endValue: Double, curve: Parametric) else {
-					throw ParseError.invalidArgumentType(message: "The parameter for 'H' must be (endPoint: Double, endValue: Double, gradientIn: Double, gradientOut: Double)")
+					throw ParseError.invalidArgumentType(message: "The parameter for 'C' must be (endPoint: Double, endValue: Double, curve: Parametric)")
 				}
 				try CompositeCurve.add(segment: Segment(endPoint: input.endPoint, endValue: input.endValue, curve: input.curve), to: &tmpSegments)
 			default:
@@ -290,15 +303,17 @@ open class CompositeCurve: Parametric {
 	The valid format characters and expected parameter types are listed below:
 
 	````
-	Format Character | Parameter Type
-	-----------------+-------------------------------------------------------------
-	S (StartValue)   | Double
-	L (Linear)       | (endPoint: Double, endValue: Double)
-	E (EaseInEaseOut)| (endPoint: Double, endValue: Double)
-	I (EaseIn)       | (endPoint: Double, endValue: Double)
-	O (EaseOut)      | (endPoint: Double, endValue: Double)
-	H (Hermite)      | (endPoint: Double, endValue: Double, gradientIn: Double, gradientOut: Double)
-	C (Curve)        | (endPoint: Double, endValue: Double, curve: Parametric)
+	Format Character          | Parameter Type
+	--------------------------+-------------------------------------------------------------
+	S (StartValue)            | Double
+	L (Linear)                | (endPoint: Double, endValue: Double)
+	E (EaseInEaseOut)         | (endPoint: Double, endValue: Double)
+	I (EaseIn)                | (endPoint: Double, endValue: Double)
+	O (EaseOut)               | (endPoint: Double, endValue: Double)
+	A (ParabolicAcceleration) | (endPoint: Double, endValue: Double)
+	D (ParabolicDeceleration) | (endPoint: Double, endValue: Double)
+	H (Hermite)               | (endPoint: Double, endValue: Double, gradientIn: Double, gradientOut: Double)
+	C (Curve)                 | (endPoint: Double, endValue: Double, curve: Parametric)
 	````
 
 	If the start-value for the first curve segment is specified with 'S', it must be the
