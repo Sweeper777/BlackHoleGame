@@ -1,4 +1,5 @@
 import UIKit
+import SwiftyUtils
 
 class BoardView: UIView {
     weak var delegate: BoardViewDelegate?
@@ -26,7 +27,7 @@ class BoardView: UIView {
     }
     
     var circleDiameter: CGFloat {
-        return actualBoardFrame.height / CGFloat(board.rowCount)
+        return actualBoardFrame.height / board.rowCount.f
     }
     
     override func draw(_ rect: CGRect) {
@@ -64,11 +65,11 @@ class BoardView: UIView {
     }
     
     func pointInBoardFrame(forCircleInRow row: Int, atIndex index: Int) -> CGPoint {
-        let n = CGFloat(board.rowCount)
-        let c = CGFloat(board.rowCount - row - 1)
+        let n = board.rowCount.f
+        let c = (board.rowCount - row - 1).f
         let w = actualBoardFrame.width
         let h = actualBoardFrame.height
-        let x = (2 * w * CGFloat(index) + w * c) / (2 * n)
+        let x = (2 * w * index.f + w * c) / (2 * n)
         let y = (n - c - 1) * h / n + (c * (circleDiameter / 2) * tan(.pi / 12))
         return CGPoint(x: x, y: y)
     }
@@ -90,7 +91,7 @@ class BoardView: UIView {
         let pointInBoardFrame = CGPoint(x: point.x - actualBoardFrame.origin.x, y: point.y - actualBoardFrame.origin.y)
         let R = circleDiameter / 2
         let transform = CGAffineTransform(translationX: R, y: R)
-        let s3 = CGFloat(sqrt(3))
+        let s3 = sqrt(3).f
         let centerOfFirstCircle = self.pointInBoardFrame(forCircleInRow: 0, atIndex: 0).applying(transform)
         let x = pointInBoardFrame.x - centerOfFirstCircle.x
         let y = pointInBoardFrame.y - centerOfFirstCircle.y
