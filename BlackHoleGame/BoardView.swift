@@ -110,6 +110,18 @@ class BoardView: UIView {
         circleView.number = number
         self.addSubview(circleView)
     }
+    
+    func addCircleViewAnimated(inRow row: Int, atIndex index: Int, backgroundColor: UIColor, number: Int, completion: () -> Void) {
+        let circleView = CircleView(frame: frameForCircleView(inRow: row, atIndex: index))
+        circleView.backgroundColor = backgroundColor
+        circleView.number = number
+        circleView.transform = CGAffineTransform(scaleX: 0, y: 0)
+        self.addSubview(circleView)
+        Animation.animate(identifier: "appear", duration: 0.7) { (progress) -> Bool in
+            circleView.transform = CGAffineTransform(scaleX: 0, y: 0) <~~ Curve.parabolicBounce[progress] ~~> CGAffineTransform.identity
+            return true
+        }
+    }
 }
 
 extension CGAffineTransform: Interpolatable {
