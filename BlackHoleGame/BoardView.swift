@@ -111,7 +111,7 @@ class BoardView: UIView {
         self.addSubview(circleView)
     }
     
-    func addCircleViewAnimated(inRow row: Int, atIndex index: Int, backgroundColor: UIColor, number: Int, completion: () -> Void) {
+    func addCircleViewAnimated(inRow row: Int, atIndex index: Int, backgroundColor: UIColor, number: Int, completion: @escaping () -> Void) {
         let circleView = CircleView(frame: frameForCircleView(inRow: row, atIndex: index))
         circleView.backgroundColor = backgroundColor
         circleView.number = number
