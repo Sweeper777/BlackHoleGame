@@ -117,10 +117,13 @@ class BoardView: UIView {
         circleView.number = number
         circleView.transform = CGAffineTransform(scaleX: 0, y: 0)
         self.addSubview(circleView)
-        Animation.animate(identifier: "appear", duration: 0.7) { (progress) -> Bool in
-            circleView.transform = CGAffineTransform(scaleX: 0, y: 0) <~~ Curve.parabolicBounce[progress] ~~> CGAffineTransform.identity
-            return true
-        }
+//        Animation.animate(identifier: "appear", duration: 0.7) { (progress) -> Bool in
+//            circleView.transform = CGAffineTransform(scaleX: 0, y: 0) <~~ Curve.parabolicBounce[progress] ~~> CGAffineTransform.identity
+//            return true
+//        }
+        UIView.animate(withDuration: 0.7, animations: {
+            circleView.transform = .identity
+        }, completion: { _ in completion() })
     }
 }
 
