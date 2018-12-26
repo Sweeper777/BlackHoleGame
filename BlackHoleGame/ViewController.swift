@@ -38,8 +38,9 @@ class ViewController: UIViewController, BoardViewDelegate {
                                              atIndex: index,
                                              backgroundColor: color,
                                              number: number,
-                                             completion: { self.board.board = self.game.board })
-            turn += 1
+                                             completion: { 
+            self.board.board = self.game.board
+            self.turn += 1
             DispatchQueue.main.async {
                 [weak self] in
                 guard let `self` = self else { return }
@@ -56,7 +57,7 @@ class ViewController: UIViewController, BoardViewDelegate {
                                                 })
                 
                 self.turn += 1
-            }
+                }})
         }
     }
 }
