@@ -286,14 +286,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BlackHoleGame/Pods-BlackHoleGame-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Animation/Animation.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyAnimate/SwiftyAnimate.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyUtils/SwiftyUtils.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Animation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyAnimate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUtils.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

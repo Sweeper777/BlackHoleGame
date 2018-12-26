@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "Animation.h"
+#import "SwiftyAnimate.h"
 
-FOUNDATION_EXPORT double AnimationVersionNumber;
-FOUNDATION_EXPORT const unsigned char AnimationVersionString[];
+FOUNDATION_EXPORT double SwiftyAnimateVersionNumber;
+FOUNDATION_EXPORT const unsigned char SwiftyAnimateVersionString[];
 

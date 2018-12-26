@@ -1,29 +1,20 @@
 PODS:
-  - Animation (1.0.0)
+  - SwiftyAnimate (1.3.0)
   - SwiftyUtils (2.0.0)
 
 DEPENDENCIES:
-  - Animation (from `https://github.com/ucotta/Animation.git`, branch `develop`)
+  - SwiftyAnimate
   - SwiftyUtils
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - SwiftyAnimate
     - SwiftyUtils
 
-EXTERNAL SOURCES:
-  Animation:
-    :branch: develop
-    :git: https://github.com/ucotta/Animation.git
-
-CHECKOUT OPTIONS:
-  Animation:
-    :commit: e8529a532f294fbe94048ea0c72647dcb53029c4
-    :git: https://github.com/ucotta/Animation.git
-
 SPEC CHECKSUMS:
-  Animation: 12a4647308260f7bde732f11b9c7dcc7e5857766
+  SwiftyAnimate: 82bf6e7691bcd149250fd8cdb968c166420f269b
   SwiftyUtils: ae914aa96b5672e9282904771e5e5b44d2e307d6
 
-PODFILE CHECKSUM: 24b9dc3dece204d3ef9937e1375d328232809666
+PODFILE CHECKSUM: f950abb86c49c4aa6d5b8daea57a174cc09aa7f4
 
 COCOAPODS: 1.5.3

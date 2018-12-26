@@ -6,7 +6,7 @@ target 'BlackHoleGame' do
   use_frameworks!
 
   pod 'SwiftyUtils'
-  pod 'Animation', :git => 'https://github.com/ucotta/Animation.git', :branch => 'develop'
+  pod 'SwiftyAnimate'
 
   target 'BlackHoleGameTests' do
     inherit! :search_paths

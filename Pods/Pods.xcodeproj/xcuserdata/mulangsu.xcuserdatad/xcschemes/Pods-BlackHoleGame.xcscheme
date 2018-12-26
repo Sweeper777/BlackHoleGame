@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EE262F514593746B79AF71C85514C792"
+               BlueprintIdentifier = "9B8D13560F25EB558CBF8B9C1BB11127"
                BuildableName = "Pods_BlackHoleGame.framework"
                BlueprintName = "Pods-BlackHoleGame"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EE262F514593746B79AF71C85514C792"
+            BlueprintIdentifier = "9B8D13560F25EB558CBF8B9C1BB11127"
             BuildableName = "Pods_BlackHoleGame.framework"
             BlueprintName = "Pods-BlackHoleGame"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -1,6 +1,6 @@
 import UIKit
 import SwiftyUtils
-import Animation
+import SwiftyAnimate
 
 class BoardView: UIView {
     weak var delegate: BoardViewDelegate?
