@@ -126,25 +126,3 @@ class BoardView: UIView {
         }, completion: { _ in completion() })
     }
 }
-
-extension CGAffineTransform: Interpolatable {
-    public static func + (lhs: CGAffineTransform, rhs: CGAffineTransform) -> CGAffineTransform {
-        return CGAffineTransform(a: lhs.a + rhs.a,
-                                 b: lhs.b + rhs.b,
-                                 c: lhs.c + rhs.c,
-                                 d: lhs.d + rhs.d,
-                                 tx: lhs.tx + rhs.tx,
-                                 ty: lhs.ty + rhs.ty)
-    }
-    
-    public static func * (lhs: CGAffineTransform, rhs: Double) -> CGAffineTransform {
-        return CGAffineTransform(a: lhs.a * rhs.f,
-                                 b: lhs.b * rhs.f,
-                                 c: lhs.c * rhs.f,
-                                 d: lhs.d * rhs.f,
-                                 tx: lhs.tx * rhs.f,
-                                 ty: lhs.ty * rhs.f)
-    }
-    
-    
-}
