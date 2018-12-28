@@ -101,7 +101,7 @@ public extension UIView {
      
      - returns: Animate instance.
      */
-    public func color(duration: TimeInterval, delay: TimeInterval = 0.0, color value: UIColor, options: UIViewAnimationOptions = []) -> Animate {
+    public func color(duration: TimeInterval, delay: TimeInterval = 0.0, color value: UIColor, options: UIView.AnimationOptions = []) -> Animate {
         return Animate(duration: duration, delay: delay, options: options) { [weak self] in
             self?.color(value)
         }
@@ -118,7 +118,7 @@ public extension UIView {
      
      - returns: Animate instance.
      */
-    public func scaled(duration: TimeInterval, delay: TimeInterval = 0.0, x: CGFloat, y: CGFloat, options: UIViewAnimationOptions = []) -> Animate {
+    public func scaled(duration: TimeInterval, delay: TimeInterval = 0.0, x: CGFloat, y: CGFloat, options: UIView.AnimationOptions = []) -> Animate {
         return Animate(duration: duration, delay: delay, options: options) { [weak self] in
             self?.scale(x: x, y: y)
         }
@@ -135,7 +135,7 @@ public extension UIView {
      
      - returns: Animate instance.
      */
-    public func rotated(duration: TimeInterval, delay: TimeInterval = 0.0, angle: CGFloat, options: UIViewAnimationOptions = []) -> Animate {
+    public func rotated(duration: TimeInterval, delay: TimeInterval = 0.0, angle: CGFloat, options: UIView.AnimationOptions = []) -> Animate {
         return Animate(duration: duration, delay: delay, options: options) { [weak self] in
             self?.rotate(angle: angle)
         }
@@ -152,7 +152,7 @@ public extension UIView {
      
      - returns: Animate instance.
      */
-    public func translated(duration: TimeInterval, delay: TimeInterval = 0.0, x: CGFloat, y: CGFloat, options: UIViewAnimationOptions = []) -> Animate {
+    public func translated(duration: TimeInterval, delay: TimeInterval = 0.0, x: CGFloat, y: CGFloat, options: UIView.AnimationOptions = []) -> Animate {
         return Animate(duration: duration, delay: delay, options: options) { [weak self] in
             self?.move(x: x, y: y)
         }
@@ -168,7 +168,7 @@ public extension UIView {
      
      - returns: Animate instance.
      */
-    public func transform(duration: TimeInterval, delay: TimeInterval = 0.0, transforms: [Transform], options: UIViewAnimationOptions = []) -> Animate {
+    public func transform(duration: TimeInterval, delay: TimeInterval = 0.0, transforms: [Transform], options: UIView.AnimationOptions = []) -> Animate {
         return Animate(duration: duration, delay: delay, options: options) { [weak self] in
             self?.transformed(by: transforms)
         }

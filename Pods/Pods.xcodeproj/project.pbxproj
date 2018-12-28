@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -39,7 +39,6 @@
 		8358E43E9DA35AD179DF6AF08C72A323 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8469CC57B9C4145E709E056224CE56 /* UIDeviceExtension.swift */; };
 		8451190ED1260C73FC62F4F6F515A1BB /* NSMutableAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F98926D8417CD6D69139BEAFF169B52 /* NSMutableAttributedStringExtension.swift */; };
 		87BFC05C1B133618CFCF6D5955D30C84 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487D03AD8752F0FEC5BD2CC3A2BA8665 /* IntExtension.swift */; };
-		87D9F1AD3D47E8642D41AF13FEA84278 /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = F3CB1371107146865AA082449AEBF2BB /* Info.plist */; };
 		8A9689C93D13031D2517D6E789209150 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA28DC72055F845B0F1DD0D3F70E1A3 /* Transform.swift */; };
 		91EF26CA4DCD7DB77A5D257277DA6E17 /* UITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49283F36CEB3606F6B748AB6C343D155 /* UITesting.swift */; };
 		970C8BD6798DA2FAEAB7599262334060 /* Pods-BlackHoleGame-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00AE186ACAAA2B408DE420D4FA0C3CE1 /* Pods-BlackHoleGame-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -111,7 +110,7 @@
 		065E72A432E05BA250933BED7FBAB983 /* Pods-BlackHoleGameTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BlackHoleGameTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		065E766CF3F27AA474A43B6BAECEA7C7 /* NSObjectExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSObjectExtension.swift; path = Sources/Extensions/UIKit/NSObjectExtension.swift; sourceTree = "<group>"; };
 		075BF6FD3AC60E5402B7285124F8EFC8 /* SwiftyUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyUtils-umbrella.h"; sourceTree = "<group>"; };
-		07F37351A637BA9F0AC3DA7DFC491882 /* SwiftyAnimate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyAnimate.framework; path = SwiftyAnimate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F37351A637BA9F0AC3DA7DFC491882 /* SwiftyAnimate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyAnimate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A93B783FD8026E0D407483D65CB602B /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIStoryboardExtension.swift; path = Sources/Extensions/UIKit/UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		0B56E9064AB5238F9D307AEAD4385E59 /* CGFloatLiteral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGFloatLiteral.swift; path = Sources/Extensions/CGFloatLiteral.swift; sourceTree = "<group>"; };
 		0F98926D8417CD6D69139BEAFF169B52 /* NSMutableAttributedStringExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSMutableAttributedStringExtension.swift; path = Sources/Extensions/NSMutableAttributedStringExtension.swift; sourceTree = "<group>"; };
@@ -120,7 +119,7 @@
 		1E793006BF44C28E376239C20C7E8C4A /* Simulator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Simulator.swift; path = Sources/Others/UIKit/Simulator.swift; sourceTree = "<group>"; };
 		1ED8CC1996792DF7C1497E35AD2B386B /* UIScreenExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIScreenExtension.swift; path = Sources/Extensions/UIKit/UIScreenExtension.swift; sourceTree = "<group>"; };
 		2509F0F45356BB5881A30399F642BE01 /* Pods-BlackHoleGame-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BlackHoleGame-acknowledgements.markdown"; sourceTree = "<group>"; };
-		278B45D30C88BB4D73C36044696DFE20 /* SwiftyUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyUtils.framework; path = SwiftyUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		278B45D30C88BB4D73C36044696DFE20 /* SwiftyUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D96975101A6868935B15DECE520C52 /* Pods-BlackHoleGame-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlackHoleGame-dummy.m"; sourceTree = "<group>"; };
 		2AF17489B69EB4E6EF45348C145B49B3 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIApplicationExtension.swift; path = Sources/Extensions/UIKit/UIApplicationExtension.swift; sourceTree = "<group>"; };
 		31691481885930777363DF2AEF0A491D /* SwiftyAnimate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyAnimate.h; path = Sources/SwiftyAnimate.h; sourceTree = "<group>"; };
@@ -161,8 +160,8 @@
 		8F0F51D6604CA86294AA474C8C37D098 /* Injectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Injectable.swift; path = Sources/Protocols/Injectable.swift; sourceTree = "<group>"; };
 		8F9BAD5C67246EA0BFE8021471F397EA /* DictionaryExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryExtension.swift; path = Sources/Extensions/DictionaryExtension.swift; sourceTree = "<group>"; };
 		92E8FFCA466378F8FC4ABCD8D7536B0C /* UIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageExtension.swift; path = Sources/Extensions/UIKit/UIImageExtension.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98567AB9D15B5302458561D04D49AEE4 /* Pods_BlackHoleGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlackHoleGame.framework; path = "Pods-BlackHoleGame.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98567AB9D15B5302458561D04D49AEE4 /* Pods_BlackHoleGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackHoleGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D9ACAF87626F9BBCA83D3E2E8072C3 /* SwiftyUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyUtils-dummy.m"; sourceTree = "<group>"; };
 		9B8F9FFEFC32A70477EFCF83A69819E7 /* SwiftyAnimate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyAnimate-prefix.pch"; sourceTree = "<group>"; };
 		9E3F7662AACE66AE2CE1599D4F2715BA /* AnimateOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimateOperation.swift; path = Sources/AnimateOperation.swift; sourceTree = "<group>"; };
@@ -193,7 +192,7 @@
 		EF71FB161E91D2E81F213B46461A72A8 /* Pods-BlackHoleGameTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BlackHoleGameTests-dummy.m"; sourceTree = "<group>"; };
 		F3CB1371107146865AA082449AEBF2BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
 		F4FF60C9BB4B29815714EC4094A123D4 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Sources/Constants.swift; sourceTree = "<group>"; };
-		FF3FFDBBA1DBBBC3D20370E0E8A109F7 /* Pods_BlackHoleGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BlackHoleGameTests.framework; path = "Pods-BlackHoleGameTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF3FFDBBA1DBBBC3D20370E0E8A109F7 /* Pods_BlackHoleGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlackHoleGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF84ABA65B67A4AAA4BADB3D7E817E31 /* SwiftyAnimate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyAnimate-dummy.m"; sourceTree = "<group>"; };
 		FFF45105EFBFA6703EED4EC173DFFF4C /* CGRectExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGRectExtensions.swift; path = Sources/Extensions/CGRectExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -280,7 +279,6 @@
 				8183B5B0E9E8CABE7E5DD631DA05F20F /* UserDefaultsExtension.swift */,
 				8270F9A024DC3B3C60744248F7F1314E /* Support Files */,
 			);
-			name = SwiftyUtils;
 			path = SwiftyUtils;
 			sourceTree = "<group>";
 		};
@@ -424,7 +422,6 @@
 				CF120FB0149B1B5436A8DA00830A0162 /* UIKit+Extensions.swift */,
 				5E9BE7B574592878DD1AB8CEA79774C5 /* Support Files */,
 			);
-			name = SwiftyAnimate;
 			path = SwiftyAnimate;
 			sourceTree = "<group>";
 		};
@@ -614,7 +611,6 @@
 				C753EAE307D5E8258F387A128B307854 /* BlockTypes.swift in Sources */,
 				365C2618B168A624ABCCB8025F15E7BF /* Collection+Extensions.swift in Sources */,
 				D4B7571670EF8243D279D86595D31CCB /* DataStructures.swift in Sources */,
-				87D9F1AD3D47E8642D41AF13FEA84278 /* Info.plist in Sources */,
 				DA9196D461F9A580A945E3F5BDE8584B /* KeyframeAnimation.swift in Sources */,
 				0A8EC885F90A3C95090AB012BF09B93F /* SpringAnimation.swift in Sources */,
 				BBD687417C5729E00CAF6D938CB627BC /* StandardAnimation.swift in Sources */,
@@ -731,11 +727,7 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyUtils/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyUtils/SwiftyUtils.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyUtils;
 				PRODUCT_NAME = SwiftyUtils;
@@ -768,11 +760,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-BlackHoleGameTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BlackHoleGameTests/Pods-BlackHoleGameTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -806,11 +794,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-BlackHoleGame/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BlackHoleGame/Pods-BlackHoleGame.modulemap";
 				OTHER_LDFLAGS = "";
@@ -820,8 +804,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -905,19 +888,14 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyUtils/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyUtils/SwiftyUtils.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyUtils;
 				PRODUCT_NAME = SwiftyUtils;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -944,11 +922,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-BlackHoleGameTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BlackHoleGameTests/Pods-BlackHoleGameTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1047,11 +1021,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-BlackHoleGame/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-BlackHoleGame/Pods-BlackHoleGame.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1086,19 +1056,14 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyAnimate/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyAnimate/SwiftyAnimate.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyAnimate;
 				PRODUCT_NAME = SwiftyAnimate;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1124,11 +1089,7 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyAnimate/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyAnimate/SwiftyAnimate.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyAnimate;
 				PRODUCT_NAME = SwiftyAnimate;
