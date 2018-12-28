@@ -6,7 +6,7 @@ target 'BlackHoleGame' do
   use_frameworks!
 
   pod 'SwiftyUtils'
-  pod 'SwiftyAnimate'
+  pod 'SwiftyAnimate', :git => 'https://github.com/rchatham/SwiftyAnimate.git', :branch => 'swift-4'
 
   target 'BlackHoleGameTests' do
     inherit! :search_paths

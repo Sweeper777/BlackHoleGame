@@ -3,18 +3,27 @@ PODS:
   - SwiftyUtils (2.0.0)
 
 DEPENDENCIES:
-  - SwiftyAnimate
+  - SwiftyAnimate (from `https://github.com/rchatham/SwiftyAnimate.git`, branch `swift-4`)
   - SwiftyUtils
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - SwiftyAnimate
     - SwiftyUtils
 
+EXTERNAL SOURCES:
+  SwiftyAnimate:
+    :branch: swift-4
+    :git: https://github.com/rchatham/SwiftyAnimate.git
+
+CHECKOUT OPTIONS:
+  SwiftyAnimate:
+    :commit: 38a80d317d0d64d77b733b74c73c9a86769632cf
+    :git: https://github.com/rchatham/SwiftyAnimate.git
+
 SPEC CHECKSUMS:
-  SwiftyAnimate: 82bf6e7691bcd149250fd8cdb968c166420f269b
+  SwiftyAnimate: ca8769df07350d49c903e4dd9ed126412e8b0579
   SwiftyUtils: ae914aa96b5672e9282904771e5e5b44d2e307d6
 
-PODFILE CHECKSUM: f950abb86c49c4aa6d5b8daea57a174cc09aa7f4
+PODFILE CHECKSUM: a98c0d411596ca49608418ffd4393dad4aba98bb
 
 COCOAPODS: 1.5.3
