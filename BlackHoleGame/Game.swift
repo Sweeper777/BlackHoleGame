@@ -4,16 +4,27 @@ class Game {
     var board: TriangularArray<Tile>
     var currentTurn = PlayerSide.red
     var currentNumber = 1
-    let boardSize = 6
+    let boardSize: Int
     
-    init() {
+    init(boardSize: Int = 6) {
+        self.boardSize = boardSize
         board = TriangularArray(rowCount: boardSize, defaultValue: .empty)
+        switch boardSize {
+        case 4, 5:
+            board[2, 1] = .wall
+        case 7:
+            [(4, 2), (2, 0), (4, 0), (2, 2), (4, 4), (6, 2), (6, 4)]
+                .forEach { board[$0.0, $0.1] = .wall }
+        default:
+            break
+        }
     }
     
     init(copyOf game: Game) {
         board = game.board
         currentTurn = game.currentTurn
         currentNumber = game.currentNumber
+        boardSize = game.boardSize
     }
     
     func canMakeMove(row: Int, index: Int) -> Bool {
@@ -90,6 +101,8 @@ extension Game: CustomStringConvertible {
                     desc += ANSIColors.red + "\(num) "
                 case .blue(let num):
                     desc += ANSIColors.blue + "\(num) "
+                case .wall:
+                    desc += ANSIColors.black + "x "
                 }
             }
             desc += "\n"
