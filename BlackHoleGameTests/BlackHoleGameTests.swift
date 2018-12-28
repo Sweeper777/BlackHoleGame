@@ -58,6 +58,12 @@ class BlackHoleGameTests: XCTestCase {
         XCTAssertFalse(game.canMakeMove(row: 1, index: 0))
     }
     
+    func testGameCanMakeMoveWithWalls() {
+        let game = Game(boardSize: 7)
+        XCTAssertFalse(game.canMakeMove(row: 6, index: 2))
+        XCTAssertTrue(game.canMakeMove(row: 6, index: 3))
+    }
+    
     func testGameMakeMove() {
         let game = Game()
         XCTAssertEqual(game.board[0, 0]!, .empty)
@@ -127,5 +133,19 @@ class BlackHoleGameTests: XCTestCase {
         let game = Game()
         game.board = board
         XCTAssertEqual(game.checkWin(), .draw)
+    }
+    
+    func testCheckWinBlueWinsWithWalls() {
+        let board: TriangularArray<Tile> = [
+            [.red(number: 1)],
+            [.red(number: 2), .red(number: 3)],
+            [.red(number: 5), .red(number: 4), .red(number: 6)],
+            [.blue(number: 5), .blue(number: 6), .blue(number: 1), .red(number: 7)],
+            [.blue(number: 7), .wall, .wall, .blue(number: 3), .red(number: 8)],
+            [.blue(number: 9), .red(number: 10), .empty, .blue(number: 4), .red(number: 10), .red(number: 9)],
+            ]
+        let game = Game()
+        game.board = board
+        XCTAssertEqual(game.checkWin(), .blueWins)
     }
 }
