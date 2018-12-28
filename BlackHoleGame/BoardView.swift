@@ -49,6 +49,9 @@ class BoardView: UIView {
                 switch tile {
                 case .empty:
                     break
+                case .wall:
+                    UIColor.gray.setFill()
+                    path.fill()
                 case .red(let number):
                     addCircleView(inRow: row,
                                   atIndex: index,
