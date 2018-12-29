@@ -3,7 +3,7 @@ import UIKit
 class ViewController: UIViewController, BoardViewDelegate {
 
     var board: BoardView!
-    let game = Game()
+    let game = Game(boardSize: 7)
     var turn = 1
     
     override func viewDidLoad() {
@@ -11,7 +11,7 @@ class ViewController: UIViewController, BoardViewDelegate {
         
         board = BoardView(frame: CGRect(x: 10, y: 10, width: 300, height: 500))
         board.backgroundColor = .white
-        board.board = Game().board
+        board.board = game.board
         board.delegate = self
         view.addSubview(board)
     }
