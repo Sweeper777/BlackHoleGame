@@ -40,24 +40,25 @@ class ViewController: UIViewController, BoardViewDelegate {
                                              number: number,
                                              completion: { 
             self.board.board = self.game.board
+    }
+    
+    func aiTurn() {
+        self.board.board = self.game.board
+        self.turn += 1
+        DispatchQueue.main.async {
+            [weak self] in
+            guard let `self` = self else { return }
+            let ai = GameAI(game: self.game, myColor: self.game.currentTurn)
+            let move = ai.getNextMove(searchDepth: self.searchDepth(forTurn: self.turn))
+            let aiNumber = self.game.currentNumber
+            self.game.makeMove(row: move.row, index: move.index)
+            self.board.appearAnimationForCircleView(
+                inRow: move.row,
+                atIndex: move.index,
+                backgroundColor: ai.myColor == .blue ? .blue : .red,
+                number: aiNumber).perform()
+            
             self.turn += 1
-            DispatchQueue.main.async {
-                [weak self] in
-                guard let `self` = self else { return }
-                let ai = GameAI(game: self.game, myColor: self.game.currentTurn)
-                let move = ai.getNextMove(searchDepth: self.searchDepth(forTurn: self.turn))
-                let aiNumber = self.game.currentNumber
-                self.game.makeMove(row: move.row, index: move.index)
-                self.board.addCircleViewAnimated(inRow: move.row,
-                                                 atIndex: move.index,
-                                                 backgroundColor: ai.myColor == .blue ? .blue : .red,
-                                                 number: aiNumber,
-                                                 completion: {
-//                                                    self.board.board = self.game.board
-                                                })
-                
-                self.turn += 1
-                }})
         }
     }
 }
