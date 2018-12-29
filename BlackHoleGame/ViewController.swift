@@ -34,12 +34,13 @@ class ViewController: UIViewController, BoardViewDelegate {
         let color = game.currentTurn == .blue ? UIColor.blue : .red
         let number = game.currentNumber
         if game.makeMove(row: row, index: index) {
-            self.board.addCircleViewAnimated(inRow: row,
-                                             atIndex: index,
-                                             backgroundColor: color,
-                                             number: number,
-                                             completion: { 
-            self.board.board = self.game.board
+            self.board.appearAnimationForCircleView(
+                 inRow: row,
+                 atIndex: index,
+                 backgroundColor: color,
+                 number: number
+            ).do(block: aiTurn).perform()
+        }
     }
     
     func aiTurn() {
