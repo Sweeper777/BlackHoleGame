@@ -1,4 +1,5 @@
 import UIKit
+import SwiftyAnimate
 
 class CircleView: UILabel {
     var number = 1 {
@@ -25,5 +26,13 @@ class CircleView: UILabel {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
+    }
+}
+
+extension CircleView {
+    func appear() -> Animate {
+        return Animate()
+            .then(animation: scaled(duration: 0.3, x: 1.1, y: 1.1))
+            .then(animation: scaled(duration: 0.1, x: 1, y: 1))
     }
 }
