@@ -114,10 +114,15 @@ class BoardView: UIView {
         self.addSubview(circleView)
     }
     
+    func viewTag(forRow row: Int, atIndex index: Int) -> Int {
+        return row * 10 + index + 1
+    }
+    
     func appearAnimationForCircleView(inRow row: Int, atIndex index: Int, backgroundColor: UIColor, number: Int) -> Animate {
         let circleView = CircleView(frame: frameForCircleView(inRow: row, atIndex: index))
         circleView.backgroundColor = backgroundColor
         circleView.number = number
+        circleView.tag = viewTag(forRow: row, atIndex: index)
         circleView.transform = CGAffineTransform(scaleX: 0, y: 0)
         self.addSubview(circleView)
 
