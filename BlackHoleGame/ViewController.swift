@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController, BoardViewDelegate {
+class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
 
     var board: BoardView!
     let game = Game(boardSize: 7)
@@ -13,6 +13,7 @@ class ViewController: UIViewController, BoardViewDelegate {
         board.backgroundColor = .white
         board.board = game.board
         board.delegate = self
+        game.delegate = self
         view.addSubview(board)
     }
     
@@ -43,13 +44,21 @@ class ViewController: UIViewController, BoardViewDelegate {
         }
     }
     
+    func gameDidEnd(game: Game, result: GameResult) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            [weak self] in
+            let emptyIndex = game.board.indexOfEmpty()!
+            self?.board.suckedInAnimation(toIndex: emptyIndex.1, atRow: emptyIndex.0).perform()
+        }
+    }
+    
     func aiTurn() {
         self.board.board = self.game.board
         self.turn += 1
         DispatchQueue.main.async {
             [weak self] in
             guard let `self` = self else { return }
-            let ai = GameAI(game: self.game, myColor: self.game.currentTurn)
+            let ai = GameAI(game: Game(copyOf: self.game), myColor: self.game.currentTurn)
             let move = ai.getNextMove(searchDepth: self.searchDepth(forTurn: self.turn))
             let aiNumber = self.game.currentNumber
             self.game.makeMove(row: move.row, index: move.index)
