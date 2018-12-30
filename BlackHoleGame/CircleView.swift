@@ -32,7 +32,7 @@ class CircleView: UILabel {
 extension CircleView {
     func appear() -> Animate {
         return Animate()
-            .then(animation: scaled(duration: 0.3, x: 1.1, y: 1.1, options: [.curveEaseIn]))
+            .then(animation: scaled(duration: 0.3, x: 1.2, y: 1.2))
             .then(animation: scaled(duration: 0.1, x: 1, y: 1))
     }
 }
