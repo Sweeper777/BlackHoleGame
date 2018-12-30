@@ -6,6 +6,8 @@ class Game {
     var currentNumber = 1
     let boardSize: Int
     
+    weak var delegate: GameDelegate?
+    
     init(boardSize: Int = 6) {
         self.boardSize = boardSize
         board = TriangularArray(rowCount: boardSize, defaultValue: .empty)
@@ -48,6 +50,10 @@ class Game {
                     board[row, index] = .blue(number: currentNumber)
                     currentTurn = .red
                     currentNumber += 1
+                }
+                let result = checkWin()
+                if result != .undecided {
+                    delegate?.gameDidEnd(game: self, result: result)
                 }
                 return true
             }
