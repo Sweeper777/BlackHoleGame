@@ -128,4 +128,14 @@ class BoardView: UIView {
 
         return circleView.appear()
     }
+    
+    func suckedInAnimation(toIndex index: Int, atRow row: Int) -> Animate {
+        let suckedInPosition = frameForCircleView(inRow: row, atIndex: index).origin
+        return board.adjacentIndices(forRow: row, index: index)
+            .compactMap { tuple in self.viewWithTag(viewTag(forRow: tuple.0, atIndex: tuple.1)) as? CircleView }
+            .map { $0.suckedIn(x: suckedInPosition.x, y: suckedInPosition.y) }
+            .reduce(Animate(), { (result: Animate, animate: Animate) -> Animate in
+                return result.and(animation: animate)
+            })
+    }
 }
