@@ -38,8 +38,10 @@ extension CircleView {
     
     func suckedIn(x: CGFloat, y: CGFloat) -> Animate {
         return Animate()
-            .then(animation: translated(duration: 1, x: x - self.x, y: y - self.y, options: [.curveEaseIn]))
-            .and(animation: scaled(duration: 1, x: 0, y: 0, options: [.curveEaseIn]))
-            .do(block: removeFromSuperview)
+            .and(animation: transform(duration: 1, transforms:
+                [.move(x: x - self.x, y: y - self.y), .scale(x: 0.01, y: 0.01)], options: [.curveEaseIn]))
+//            .wait(timeout: 1, waitBlock: { [weak self] (resume) in
+//                self?.removeFromSuperview()
+//            })
     }
 }
