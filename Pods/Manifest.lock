@@ -1,13 +1,16 @@
 PODS:
+  - SnapKit (4.0.0)
   - SwiftyAnimate (1.3.0)
   - SwiftyUtils (2.0.0)
 
 DEPENDENCIES:
+  - SnapKit (= 4.0)
   - SwiftyAnimate (from `https://github.com/rchatham/SwiftyAnimate.git`, branch `swift-4`)
   - SwiftyUtils
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - SnapKit
     - SwiftyUtils
 
 EXTERNAL SOURCES:
@@ -21,9 +24,10 @@ CHECKOUT OPTIONS:
     :git: https://github.com/rchatham/SwiftyAnimate.git
 
 SPEC CHECKSUMS:
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyAnimate: ca8769df07350d49c903e4dd9ed126412e8b0579
   SwiftyUtils: ae914aa96b5672e9282904771e5e5b44d2e307d6
 
-PODFILE CHECKSUM: a98c0d411596ca49608418ffd4393dad4aba98bb
+PODFILE CHECKSUM: 1c235e2386ef804974456f6acbc0dd2ea8652533
 
 COCOAPODS: 1.5.3
