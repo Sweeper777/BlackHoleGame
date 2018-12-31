@@ -17,6 +17,7 @@
 		5A34794021C8879B00E0C686 /* BoardViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34793F21C8879B00E0C686 /* BoardViewDelegate.swift */; };
 		5A34E27321C9D80700EF0AFA /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34E27221C9D80700EF0AFA /* CircleView.swift */; };
 		5A34E27521C9DA3600EF0AFA /* FontSizeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34E27421C9DA3600EF0AFA /* FontSizeHelper.swift */; };
+		5A3722DB21D85B5000AEB72C /* GameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3722DA21D85B5000AEB72C /* GameDelegate.swift */; };
 		5A37ED4121C38F0D00251FD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37ED4021C38F0D00251FD5 /* AppDelegate.swift */; };
 		5A37ED4321C38F0D00251FD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A37ED4221C38F0D00251FD5 /* ViewController.swift */; };
 		5A37ED4621C38F0D00251FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A37ED4421C38F0D00251FD5 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		5A34793F21C8879B00E0C686 /* BoardViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewDelegate.swift; sourceTree = "<group>"; };
 		5A34E27221C9D80700EF0AFA /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		5A34E27421C9DA3600EF0AFA /* FontSizeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSizeHelper.swift; sourceTree = "<group>"; };
+		5A3722DA21D85B5000AEB72C /* GameDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDelegate.swift; sourceTree = "<group>"; };
 		5A37ED3D21C38F0D00251FD5 /* BlackHoleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlackHoleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A37ED4021C38F0D00251FD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A37ED4221C38F0D00251FD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				5A34E27421C9DA3600EF0AFA /* FontSizeHelper.swift */,
 				5A3471B821C72DAE0079F5A3 /* Colors.swift */,
 				5A3471BB21C72DAE0079F5A3 /* Game.swift */,
+				5A3722DA21D85B5000AEB72C /* GameDelegate.swift */,
 				5A3471B721C72DAE0079F5A3 /* GameAI.swift */,
 				5A3471B921C72DAE0079F5A3 /* Tile.swift */,
 				5A3471BA21C72DAE0079F5A3 /* TriangularArray.swift */,
@@ -331,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A3471BC21C72DAE0079F5A3 /* GameAI.swift in Sources */,
+				5A3722DB21D85B5000AEB72C /* GameDelegate.swift in Sources */,
 				5A3471BD21C72DAE0079F5A3 /* Colors.swift in Sources */,
 				5A3471C021C72DAE0079F5A3 /* Game.swift in Sources */,
 				5A3471BF21C72DAE0079F5A3 /* TriangularArray.swift in Sources */,
