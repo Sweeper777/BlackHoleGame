@@ -2,11 +2,16 @@ import UIKit
 import SwiftyAnimate
 
 class CircleView: UILabel {
-    var number = 1 {
+    var number: Int? = 1 {
         didSet {
-            let fontSize = fontSizeThatFits(size: bounds.size, text: "\(number)" as NSString, font: UIFont.systemFont(ofSize: 0)) * 0.7
-            font = UIFont.systemFont(ofSize: fontSize)
-            text = "\(number)"
+            if let number = self.number {
+                let fontSize = fontSizeThatFits(size: bounds.size, text: "\(number)" as NSString, font: UIFont.systemFont(ofSize: 0)) * 0.7
+                font = UIFont.systemFont(ofSize: fontSize)
+                text = "\(number)"
+            } else {
+                text = ""
+                backgroundColor = .clear
+            }
         }
     }
 
