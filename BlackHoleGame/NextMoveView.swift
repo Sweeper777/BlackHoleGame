@@ -15,4 +15,14 @@ class NextMoveView : UIView {
         }
     }
     
+    func commonInit() {
+        let view = viewFromNibForClass()
+        view.frame = bounds
+        view.autoresizingMask = [
+            UIView.AutoresizingMask.flexibleWidth,
+            UIView.AutoresizingMask.flexibleHeight
+        ]
+        addSubview(view)
+        backgroundColor = .clear
+    }
 }
