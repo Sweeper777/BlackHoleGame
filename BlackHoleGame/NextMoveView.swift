@@ -25,4 +25,14 @@ class NextMoveView : UIView {
         addSubview(view)
         backgroundColor = .clear
     }
+    
+    private func viewFromNibForClass() -> UIView {
+        
+        let bundle = Bundle(for: NextMoveView.self)
+        let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
+        let view = nib.instantiate(withOwner: self, options: nil).first as! UIView
+        
+        return view
+    }
+    
 }
