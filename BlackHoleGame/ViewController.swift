@@ -93,5 +93,9 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
             self.turn += 1
         }
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        board.setNeedsDisplay()
+    }
 }
 
