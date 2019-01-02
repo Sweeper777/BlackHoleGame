@@ -22,6 +22,12 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
         nextMoveView.color = .red
         nextMoveView.number = 1
         view.addSubview(nextMoveView)
+        nextMoveView.snp.makeConstraints { (make) in
+            make.right.equalToSuperview().offset(-8)
+            make.bottom.equalToSuperview().offset(-8)
+            make.width.equalTo(100)
+            make.height.equalTo(120)
+        }
     }
     
     func searchDepth(forTurn turn: Int) -> Int {
