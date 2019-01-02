@@ -1,10 +1,12 @@
 import UIKit
+import SnapKit
 
 class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
 
     var board: BoardView!
     let game = Game(boardSize: 7)
     var turn = 1
+    var nextMoveView: NextMoveView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,6 +17,11 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
         board.delegate = self
         game.delegate = self
         view.addSubview(board)
+        
+        nextMoveView = NextMoveView(frame: .zero)
+        nextMoveView.color = .red
+        nextMoveView.number = 1
+        view.addSubview(nextMoveView)
     }
     
     func searchDepth(forTurn turn: Int) -> Int {
