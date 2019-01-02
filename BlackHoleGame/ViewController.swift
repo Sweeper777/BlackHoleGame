@@ -22,6 +22,15 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
         nextMoveView.color = .red
         nextMoveView.number = 1
         view.addSubview(nextMoveView)
+        
+        board.snp.makeConstraints { (make) in
+            make.center.equalToSuperview()
+            make.left.equalTo(view.safeAreaLayoutGuide).offset(8)
+            make.right.equalTo(view.safeAreaLayoutGuide).offset(-8)
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(8)
+            make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-8)
+        }
+        
         nextMoveView.snp.makeConstraints { (make) in
             make.right.equalToSuperview().offset(-8)
             make.bottom.equalToSuperview().offset(-8)
