@@ -74,7 +74,7 @@ class BoardView: UIView {
         let w = actualBoardFrame.width
         let h = actualBoardFrame.height
         let x = (2 * w * index.f + w * c) / (2 * n)
-        let y = (n - c - 1) * h / n + (c * (circleDiameter / 2) * tan(.pi / 12))
+        let y = (n - c - 1) * h / n - ((n - c - 1) * (circleDiameter / 2) * tan(.pi / 12))
         return CGPoint(x: x, y: y)
     }
     
