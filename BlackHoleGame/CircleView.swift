@@ -10,7 +10,6 @@ class CircleView: UILabel {
                 text = "\(number)"
             } else {
                 text = ""
-                backgroundColor = .clear
             }
         }
     }
@@ -20,13 +19,28 @@ class CircleView: UILabel {
             setNeedsDisplay()
         }
     }
+    
+    override func draw(_ rect: CGRect) {
+        if bounds.height > bounds.width {
+            let y = (bounds.height - bounds.width) / 2
+            let path = UIBezierPath(ovalIn: CGRect(x: 0, y: y, width: bounds.width, height: bounds.width))
+            circleColor.setFill()
+            path.fill()
+        } else {
+            let x = (bounds.width - bounds.height) / 2
+            let path = UIBezierPath(ovalIn: CGRect(x: x, y: 0, width: bounds.height, height: bounds.height))
+            circleColor.setFill()
+            path.fill()
+        }
+        super.draw(rect)
+    }
 
     func commonInit() {
-        layer.cornerRadius = bounds.width / 2
         isUserInteractionEnabled = false
         clipsToBounds = true
         textColor = .white
         textAlignment = .center
+        backgroundColor = .clear
     }
     
     override init(frame: CGRect) {
