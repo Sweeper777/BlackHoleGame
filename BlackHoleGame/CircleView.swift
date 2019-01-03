@@ -14,6 +14,12 @@ class CircleView: UILabel {
             }
         }
     }
+    
+    var circleColor: UIColor = .clear {
+        didSet {
+            setNeedsDisplay()
+        }
+    }
 
     func commonInit() {
         layer.cornerRadius = bounds.width / 2
