@@ -84,6 +84,7 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
             let move = ai.getNextMove(searchDepth: self.searchDepth(forTurn: self.turn))
             let aiNumber = self.game.currentNumber
             self.game.makeMove(row: move.row, index: move.index)
+            self.board.board = self.game.board
             self.board.appearAnimationForCircleView(
                 inRow: move.row,
                 atIndex: move.index,
