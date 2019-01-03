@@ -1,4 +1,5 @@
 import UIKit
+import SnapKit
 
 class NextMoveView : UIView {
     @IBOutlet var circleView: CircleView!
@@ -24,6 +25,9 @@ class NextMoveView : UIView {
         ]
         addSubview(view)
         backgroundColor = .clear
+        circleView.snp.makeConstraints { (make) in
+            make.width.equalTo(circleView.snp.height).priority(.high)
+        }
     }
     
     private func viewFromNibForClass() -> UIView {
