@@ -12,7 +12,7 @@ class NextMoveView : UIView {
     
     var color: UIColor = .clear {
         didSet {
-            circleView.backgroundColor = color
+            circleView.circleColor = color
         }
     }
     
