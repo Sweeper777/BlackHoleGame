@@ -3,6 +3,8 @@ import SnapKit
 
 class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
 
+    var aiQueue = DispatchQueue(label: "aiQueue")
+    
     var board: BoardView!
     let game = Game(boardSize: 6)
     var turn = 1
@@ -77,7 +79,7 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
     func aiTurn() {
         self.board.board = self.game.board
         self.turn += 1
-        DispatchQueue.main.async {
+        aiQueue.async {
             [weak self] in
             guard let `self` = self else { return }
             let ai = GameAI(game: Game(copyOf: self.game), myColor: self.game.currentTurn)
@@ -85,13 +87,16 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
             let aiNumber = self.game.currentNumber
             self.game.makeMove(row: move.row, index: move.index)
             self.board.board = self.game.board
-            self.board.appearAnimationForCircleView(
-                inRow: move.row,
-                atIndex: move.index,
-                backgroundColor: ai.myColor == .blue ? .blue : .red,
-                number: aiNumber).perform()
-            
-            self.turn += 1
+            DispatchQueue.main.async {
+                [weak self] in
+                self?.board.appearAnimationForCircleView(
+                    inRow: move.row,
+                    atIndex: move.index,
+                    backgroundColor: ai.myColor == .blue ? .blue : .red,
+                    number: aiNumber).perform()
+                
+                self?.turn += 1
+            }
         }
     }
     
