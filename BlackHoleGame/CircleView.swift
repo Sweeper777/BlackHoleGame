@@ -14,6 +14,8 @@ class CircleView: UIView {
         }
     }
     
+    var label: UILabel!
+    
     var circleColor: UIColor = .clear {
         didSet {
             setNeedsDisplay()
@@ -36,6 +38,13 @@ class CircleView: UIView {
     }
 
     func commonInit() {
+        label = UILabel(frame: .zero)
+        self.addSubview(label)
+        label.snp.makeConstraints { (make) in
+            make.width.equalToSuperview()
+            make.height.equalToSuperview()
+            make.center.equalToSuperview()
+        }
         isUserInteractionEnabled = false
         clipsToBounds = true
         textColor = .white
