@@ -1,7 +1,7 @@
 import UIKit
 import SwiftyAnimate
 
-class CircleView: UILabel {
+class CircleView: UIView {
     var number: Int? = 1 {
         didSet {
             if let number = self.number {
