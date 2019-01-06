@@ -4,7 +4,7 @@ import SnapKit
 class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
 
     var board: BoardView!
-    let game = Game(boardSize: 7)
+    let game = Game(boardSize: 6)
     var turn = 1
     var nextMoveView: NextMoveView!
     
