@@ -6,10 +6,10 @@ class CircleView: UIView {
         didSet {
             if let number = self.number {
                 let fontSize = fontSizeThatFits(size: bounds.size, text: "\(number)" as NSString, font: UIFont.systemFont(ofSize: 0)) * 0.7
-                font = UIFont.systemFont(ofSize: fontSize)
-                text = "\(number)"
+                label?.font = UIFont.systemFont(ofSize: fontSize)
+                label?.text = "\(number)"
             } else {
-                text = ""
+                label?.text = ""
             }
         }
     }
@@ -34,7 +34,6 @@ class CircleView: UIView {
             circleColor.setFill()
             path.fill()
         }
-        super.draw(rect)
     }
 
     func commonInit() {
@@ -47,8 +46,8 @@ class CircleView: UIView {
         }
         isUserInteractionEnabled = false
         clipsToBounds = true
-        textColor = .white
-        textAlignment = .center
+        label.textColor = .white
+        label.textAlignment = .center
         backgroundColor = .clear
     }
     
