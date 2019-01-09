@@ -3,6 +3,7 @@ import SnapKit
 
 class NextMoveView : UIView {
     @IBOutlet var circleView: CircleView!
+    @IBOutlet var label: UILabel!
     
     var number: Int? {
         didSet {
