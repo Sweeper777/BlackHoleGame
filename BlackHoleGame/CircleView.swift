@@ -34,6 +34,13 @@ class CircleView: UIView {
             circleColor.setFill()
             path.fill()
         }
+        if let number = self.number {
+            let fontSize = fontSizeThatFits(size: bounds.size, text: "\(number)" as NSString, font: UIFont.systemFont(ofSize: 0)) * 0.7
+            label?.font = UIFont.systemFont(ofSize: fontSize)
+            label?.text = "\(number)"
+        } else {
+            label?.text = ""
+        }
     }
 
     func commonInit() {
