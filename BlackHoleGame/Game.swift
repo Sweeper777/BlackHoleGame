@@ -6,6 +6,8 @@ class Game {
     var currentNumber = 1
     let boardSize: Int
     
+    var ended: Bool = false
+    
     weak var delegate: GameDelegate?
     
     init(boardSize: Int = 6) {
@@ -76,6 +78,7 @@ class Game {
             }
             return result
         })
+        ended = true
         if redScore < blueScore {
             return .redWins
         } else if redScore > blueScore {
