@@ -47,9 +47,7 @@ class CircleView: UIView {
         label = UILabel(frame: .zero)
         self.addSubview(label)
         label.snp.makeConstraints { (make) in
-            make.width.equalToSuperview()
-            make.height.equalToSuperview()
-            make.center.equalToSuperview()
+            make.edges.equalToSuperview()
         }
         isUserInteractionEnabled = false
         clipsToBounds = true
