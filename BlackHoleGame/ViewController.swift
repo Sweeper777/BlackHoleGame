@@ -99,6 +99,9 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         board.setNeedsDisplay()
+        nextMoveView.setNeedsDisplay()
+        nextMoveView.updateLabelFont()
+        
     }
 }
 
