@@ -62,6 +62,7 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
                  backgroundColor: color,
                  number: number
             ).do(block: aiTurn).perform()
+            updateNextMoveview()
         }
     }
     
@@ -93,6 +94,7 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
                     number: aiNumber).perform()
                 
                 self?.turn += 1
+                self?.updateNextMoveview()
             }
         }
     }
