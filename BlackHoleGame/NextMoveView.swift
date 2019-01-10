@@ -46,4 +46,9 @@ class NextMoveView : UIView {
         super.init(coder: aDecoder)
         commonInit()
     }
+    
+    override func draw(_ rect: CGRect) {
+        circleView.setNeedsDisplay()
+    }
+    
 }
