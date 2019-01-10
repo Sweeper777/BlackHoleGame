@@ -51,4 +51,9 @@ class NextMoveView : UIView {
         circleView.setNeedsDisplay()
     }
     
+    func updateLabelFont() {
+//        let fontSize = fontSizeThatFits(size: label.bounds.size, text: label.text! as NSString, font: label.font) * 0.7
+//        let fontSize = label.height * 0.3
+//        label.font = label.font.withSize(fontSize)
+    }
 }
