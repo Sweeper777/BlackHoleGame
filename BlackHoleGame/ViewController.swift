@@ -97,6 +97,11 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
         }
     }
     
+    func updateNextMoveview() {
+        nextMoveView.color = game.currentTurn == .red ? .red : .blue
+        nextMoveView.number = game.ended ? nil :  game.currentNumber
+    }
+    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         board.setNeedsDisplay()
         nextMoveView.setNeedsDisplay()
