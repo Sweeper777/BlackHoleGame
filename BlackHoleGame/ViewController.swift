@@ -27,10 +27,7 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
         
         board.snp.makeConstraints { (make) in
             make.center.equalToSuperview()
-            make.left.equalTo(view.safeAreaLayoutGuide).offset(8)
-            make.right.equalTo(view.safeAreaLayoutGuide).offset(-8)
-            make.top.equalTo(view.safeAreaLayoutGuide).offset(8)
-            make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-8)
+            make.edges.equalToSuperview().inset(8)
         }
         
         nextMoveView.snp.makeConstraints { (make) in
