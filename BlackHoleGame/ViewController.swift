@@ -44,6 +44,19 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
             constraintRelativeToHeight = make.height.equalTo(view.snp.height).dividedBy(7).constraint
             constraintRelativeToWidth = make.width.equalTo(view.snp.width).dividedBy(7).constraint
         }
+        
+        updateNextMoveViewConstraints()
+    }
+    
+    func updateNextMoveViewConstraints() {
+        if traitCollection.horizontalSizeClass == .compact &&
+            traitCollection.verticalSizeClass == .regular {
+            constraintRelativeToWidth.deactivate()
+            constraintRelativeToHeight.activate()
+        } else {
+            constraintRelativeToWidth.activate()
+            constraintRelativeToHeight.deactivate()
+        }
     }
     
     func searchDepth(forTurn turn: Int) -> Int {
