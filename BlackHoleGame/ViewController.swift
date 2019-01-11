@@ -10,6 +10,9 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
     var turn = 1
     var nextMoveView: NextMoveView!
     
+    var constraintRelativeToHeight: Constraint!
+    var constraintRelativeToWidth: Constraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
