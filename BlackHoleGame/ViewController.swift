@@ -33,6 +33,10 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
             make.edges.equalToSuperview().inset(8)
         }
         
+        addConstraintsForNextMoveView()
+    }
+    
+    func addConstraintsForNextMoveView() {
         nextMoveView.snp.makeConstraints { (make) in
             make.right.equalTo(view.safeAreaLayoutGuide).offset(-8)
             make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-8)
