@@ -130,6 +130,9 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
         nextMoveView.setNeedsDisplay()
         nextMoveView.updateLabelFont()
         
+        coordinator.animate(alongsideTransition: { [weak self] (context) in
+            self?.updateNextMoveViewConstraints()
+        }, completion: nil)
     }
     
     override func overrideTraitCollection(forChild childViewController: UIViewController) -> UITraitCollection? {
