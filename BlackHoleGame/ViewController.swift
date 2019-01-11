@@ -131,5 +131,13 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
         nextMoveView.updateLabelFont()
         
     }
+    
+    override func overrideTraitCollection(forChild childViewController: UIViewController) -> UITraitCollection? {
+        if view.bounds.width < view.bounds.height {
+            return UITraitCollection(horizontalSizeClass: .compact)
+        } else {
+            return UITraitCollection(horizontalSizeClass: .regular)
+        }
+    }
 }
 
