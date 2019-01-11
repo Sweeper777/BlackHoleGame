@@ -62,7 +62,7 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
                  backgroundColor: color,
                  number: number
             ).do(block: aiTurn).perform()
-            updateNextMoveview()
+            updateNextMoveView()
         }
     }
     
@@ -94,12 +94,12 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
                     number: aiNumber).perform()
                 
                 self?.turn += 1
-                self?.updateNextMoveview()
+                self?.updateNextMoveView()
             }
         }
     }
     
-    func updateNextMoveview() {
+    func updateNextMoveView() {
         nextMoveView.color = game.currentTurn == .red ? .red : .blue
         nextMoveView.number = game.ended ? nil :  game.currentNumber
     }
