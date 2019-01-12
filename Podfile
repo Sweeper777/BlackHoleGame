@@ -8,6 +8,7 @@ target 'BlackHoleGame' do
   pod 'SwiftyUtils'
   pod 'SwiftyAnimate', :git => 'https://github.com/rchatham/SwiftyAnimate.git', :branch => 'swift-4'
   pod 'SnapKit', '4.0'
+  pod 'FittableFontLabel'
   
   target 'BlackHoleGameTests' do
     inherit! :search_paths

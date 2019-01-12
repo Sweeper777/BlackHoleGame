@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ABD4D803353C5E14A2DA897E15FB5168"
-               BlueprintName = "SwiftyUtils"
+               BlueprintIdentifier = "FE9B72553A1D3897B5141DF9777D44E3"
+               BlueprintName = "FittableFontLabel"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SwiftyUtils.framework">
+               BuildableName = "FittableFontLabel.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
