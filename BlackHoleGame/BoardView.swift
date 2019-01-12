@@ -31,6 +31,10 @@ class BoardView: UIView {
         return actualBoardFrame.height / board.rowCount.f
     }
     
+    var lineWidth: CGFloat {
+        return max(actualBoardFrame.height, actualBoardFrame.width) / 100
+    }
+    
     override func draw(_ rect: CGRect) {
         if board == nil {
             return
@@ -41,7 +45,7 @@ class BoardView: UIView {
         for row in 0..<board.rowCount {
             for index in 0...row {
                 let path = UIBezierPath(ovalIn: CGRect(origin: pointInViewFrame(forCircleInRow: row, atIndex: index), size: size))
-                path.lineWidth = 3
+                path.lineWidth = lineWidth
                 UIColor.black.setStroke()
                 path.stroke()
                 
@@ -84,9 +88,9 @@ class BoardView: UIView {
     }
     
     func frameForCircleView(inRow row: Int, atIndex index: Int) -> CGRect {
-        let transform = CGAffineTransform(translationX: 1.5, y: 1.5)
+        let transform = CGAffineTransform(translationX: lineWidth / 2, y: lineWidth / 2)
         let point = pointInViewFrame(forCircleInRow: row, atIndex: index).applying(transform)
-        let size = CGSize(width: circleDiameter - 3, height: circleDiameter - 3)
+        let size = CGSize(width: circleDiameter - lineWidth, height: circleDiameter - lineWidth)
         return CGRect(origin: point, size: size)
     }
     
