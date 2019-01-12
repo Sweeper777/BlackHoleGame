@@ -26,6 +26,8 @@ class NextMoveView : UIView {
         ]
         addSubview(view)
         backgroundColor = .clear
+        
+        label.adjustsFontSizeToFitWidth = true
     }
     
     private func viewFromNibForClass() -> UIView {
