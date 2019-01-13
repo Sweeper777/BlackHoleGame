@@ -1,19 +1,25 @@
 PODS:
   - FittableFontLabel (3.0.0)
+  - SCLAlertView (0.8)
   - SnapKit (4.0.0)
   - SwiftyAnimate (1.3.0)
+  - SwiftyButton (0.8.2)
   - SwiftyUtils (2.0.0)
 
 DEPENDENCIES:
   - FittableFontLabel
+  - SCLAlertView
   - SnapKit (= 4.0)
   - SwiftyAnimate (from `https://github.com/rchatham/SwiftyAnimate.git`, branch `swift-4`)
+  - SwiftyButton
   - SwiftyUtils
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FittableFontLabel
+    - SCLAlertView
     - SnapKit
+    - SwiftyButton
     - SwiftyUtils
 
 EXTERNAL SOURCES:
@@ -28,10 +34,12 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   FittableFontLabel: 34581be026d89c02eb7be992c163e705b586b86f
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyAnimate: ca8769df07350d49c903e4dd9ed126412e8b0579
+  SwiftyButton: 5b0ef314e9cf61cf8a83e456ddd1ea1f53f30598
   SwiftyUtils: ae914aa96b5672e9282904771e5e5b44d2e307d6
 
-PODFILE CHECKSUM: d35f66aa7fe7e2878380a925b4dbf21e3b4a5530
+PODFILE CHECKSUM: c986ca15d04ddbec43d79c9cce00e664ab999efa
 
 COCOAPODS: 1.5.3

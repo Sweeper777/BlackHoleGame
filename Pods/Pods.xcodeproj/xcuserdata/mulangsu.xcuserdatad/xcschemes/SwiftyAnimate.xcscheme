@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A7559B9E2B0411AB64E9B58DA832CF93"
+               BlueprintIdentifier = "51028B02224BA944493AA098A84144EA"
                BlueprintName = "SwiftyAnimate"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "SwiftyAnimate.framework">
