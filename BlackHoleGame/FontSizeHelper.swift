@@ -21,3 +21,11 @@ extension String {
         return NSLocalizedString(self, comment: "")
     }
 }
+
+extension UILabel {
+    func updateFontSizeToFit(size: CGSize) {
+        let fontSize = fontSizeThatFits(size: size, text: (text ?? "a") as NSString, font: font) * 0.9
+        font = font.withSize(fontSize)
+    }
+    
+}
