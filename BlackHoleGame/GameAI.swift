@@ -38,9 +38,8 @@ class GameAI {
                 }
             }
         }
-        results = results.filter { $0 != .draw }
-        let iWin = myColor == .blue ? GameResult.blueWins : .redWins
-        let iWinCount = results.filter { $0 == iWin }.count
+        results = results.filter { if case .draw = $0 { return false } else { return true } }
+        let iWinCount = results.filter(iWon).count
         let iLoseCount = results.count - iWinCount
         return iWinCount - iLoseCount
     }
