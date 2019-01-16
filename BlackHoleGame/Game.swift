@@ -80,11 +80,11 @@ class Game {
         })
         ended = true
         if redScore < blueScore {
-            return .redWins
+            return .redWins(red: redScore, blue: blueScore)
         } else if redScore > blueScore {
-            return .blueWins
+            return .blueWins(red: redScore, blue: blueScore)
         } else {
-            return .draw
+            return .draw(both: redScore)
         }
     }
     
