@@ -54,8 +54,11 @@ class Game {
                     currentNumber += 1
                 }
                 let result = checkWin()
-                if result != .undecided {
+                switch result {
+                case .blueWins, .redWins, .draw:
                     delegate?.gameDidEnd(game: self, result: result)
+                case .undecided:
+                    break
                 }
                 return true
             }
