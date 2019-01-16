@@ -8,6 +8,15 @@ class GameAI {
         self.myColor = myColor
     }
     
+    func iWon(gameResult: GameResult) -> Bool {
+        switch (myColor, gameResult) {
+        case (.red, .redWins), (.blue, .blueWins):
+            return true
+        default:
+            return false
+        }
+    }
+    
     func evaluateHeuristics() -> Int {
         let result = game.checkWin()
         if result == .draw {
