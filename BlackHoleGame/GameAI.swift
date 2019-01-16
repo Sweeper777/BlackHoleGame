@@ -19,14 +19,13 @@ class GameAI {
     
     func evaluateHeuristics() -> Int {
         let result = game.checkWin()
-        if result == .draw {
+        switch result {
+        case .draw:
             return 100
-        } else if result == .undecided {
+        case .undecided:
             return evaluateInUndecidedCase()
-        } else if (result == .blueWins && myColor == .blue) || (result == .redWins && myColor == .red) {
-            return 10000
-        } else {
-            return -10000
+        default:
+            return 10000 * (iWon(gameResult: result) ? 1 : -1)
         }
     }
     
