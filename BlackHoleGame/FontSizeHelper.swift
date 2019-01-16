@@ -28,4 +28,7 @@ extension UILabel {
         font = font.withSize(fontSize)
     }
     
+    func updateFontSizeToFit() {
+        updateFontSizeToFit(size: bounds.size)
+    }
 }
