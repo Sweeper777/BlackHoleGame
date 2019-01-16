@@ -33,8 +33,8 @@ enum PlayerSide {
 }
 
 enum GameResult {
-    case redWins
-    case blueWins
-    case draw
+    case redWins(red: Int, blue: Int)
+    case blueWins(red: Int, blue: Int)
+    case draw(both: Int)
     case undecided
 }
