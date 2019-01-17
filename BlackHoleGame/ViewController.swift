@@ -147,6 +147,15 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
         alert.showWarning("Confirm", subTitle: "Are you sure you want to restart?")
     }
     
+    func restartGame() {
+        game = Game(boardSize: 6)
+        game.delegate = self
+        turn = 1
+        board.board = game.board
+        board.setNeedsDisplay()
+        updateNextMoveView()
+    }
+    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         board.setNeedsDisplay()
         nextMoveView.setNeedsDisplay()
