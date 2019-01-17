@@ -40,6 +40,15 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
         addConstraintsForNextMoveView()
         
         restartButton = PressableButton()
+        restartButton.setTitle("↺", for: .normal)
+        view.addSubview(restartButton)
+        restartButton.snp.makeConstraints { (make) in
+            make.bottom.equalToSuperview().inset(8)
+            make.left.equalToSuperview().inset(8)
+            make.width.equalTo(restartButton.snp.height)
+            make.height.equalTo(nextMoveView.snp.width).dividedBy(2)
+        }
+        restartButton.addTarget(self, action: #selector(restartButtonDidPress), for: .touchUpInside)
     }
     
     func addConstraintsForNextMoveView() {
