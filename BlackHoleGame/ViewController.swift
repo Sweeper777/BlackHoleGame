@@ -8,9 +8,9 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
     var aiQueue = DispatchQueue(label: "aiQueue")
     
     var board: BoardView!
-    let game = Game(boardSize: 6)
     var restartButton: PressableButton!
     
+    var game = Game(boardSize: 6)
     var turn = 1
     var nextMoveView: NextMoveView!
     
