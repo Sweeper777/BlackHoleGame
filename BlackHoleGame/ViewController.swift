@@ -140,6 +140,13 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
         nextMoveView.number = game.ended ? nil :  game.currentNumber
     }
     
+    @objc func restartButtonDidPress() {
+        let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
+        alert.addButton("Yes", action: restartGame)
+        alert.addButton("No", action: {})
+        alert.showWarning("Confirm", subTitle: "Are you sure you want to restart?")
+    }
+    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         board.setNeedsDisplay()
         nextMoveView.setNeedsDisplay()
