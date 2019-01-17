@@ -51,6 +51,11 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
         restartButton.addTarget(self, action: #selector(restartButtonDidPress), for: .touchUpInside)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        restartButton.titleLabel!.updateFontSizeToFit(size: restartButton.bounds.size)
+        nextMoveView.label.updateFontSizeToFit()
+    }
+    
     func addConstraintsForNextMoveView() {
         nextMoveView.snp.makeConstraints { (make) in
             make.right.equalTo(view.safeAreaLayoutGuide).offset(-8)
