@@ -1,5 +1,7 @@
 import UIKit
 import SnapKit
+import SwiftyButton
+import SCLAlertView
 
 class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
 
@@ -7,6 +9,8 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
     
     var board: BoardView!
     let game = Game(boardSize: 6)
+    var restartButton: PressableButton!
+    
     var turn = 1
     var nextMoveView: NextMoveView!
     
@@ -34,6 +38,8 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
         }
         
         addConstraintsForNextMoveView()
+        
+        restartButton = PressableButton()
     }
     
     func addConstraintsForNextMoveView() {
