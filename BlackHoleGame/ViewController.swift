@@ -108,7 +108,7 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
     }
     
     func gameDidEnd(game: Game, result: GameResult) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             [weak self] in
             let emptyIndex = game.board.indexOfEmpty()!
             self?.board.suckedInAnimation(toIndex: emptyIndex.1, atRow: emptyIndex.0).perform()
