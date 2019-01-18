@@ -20,4 +20,14 @@ class MainMenuViewController: UIViewController {
         }
         playButton.setTitle("PLAY", for: .normal)
     }
+    
+    override func overrideTraitCollection(forChild childViewController: UIViewController) -> UITraitCollection? {
+        if view.bounds.width < view.bounds.height {
+            return UITraitCollection(traitsFrom: [UITraitCollection(horizontalSizeClass: .compact), UITraitCollection(verticalSizeClass: .regular)])
+        } else {
+            return UITraitCollection(traitsFrom: [UITraitCollection(horizontalSizeClass: .regular), UITraitCollection(verticalSizeClass: .compact)])
+        }
+    }
+    
+    }
 }
