@@ -111,7 +111,19 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             [weak self] in
             let emptyIndex = game.board.indexOfEmpty()!
-            self?.board.suckedInAnimation(toIndex: emptyIndex.1, atRow: emptyIndex.0).perform()
+            self?.board.suckedInAnimation(toIndex: emptyIndex.1, atRow: emptyIndex.0).perform {
+                let alert = SCLAlertView()
+                switch result {
+                case .blueWins(red: let red, blue: let blue):
+                    alert.showInfo("Blue won!", subTitle: "Red: \(red), Blue: \(blue)")
+                case .redWins(red: let red, blue: let blue):
+                    alert.showInfo("Red won!", subTitle: "Red: \(red), Blue: \(blue)")
+                case .draw(both: let both):
+                    alert.showInfo("It's a draw!", subTitle: "Red: \(both), Blue: \(both)")
+                case .undecided:
+                    fatalError("This should not be reached")
+                }
+            }
         }
     }
     
