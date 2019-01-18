@@ -90,7 +90,7 @@ class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
     }
     
     func didTouchCircle(inRow row: Int, atIndex index: Int) {
-        if game.currentTurn != .red || game.checkWin() != .undecided {
+        if game.currentTurn != .red || game.ended{
             return
         }
         
