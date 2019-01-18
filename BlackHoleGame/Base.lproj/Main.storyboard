@@ -18,24 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6gk-cz-FWd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6gk-cz-FWd">
+                                <rect key="frame" x="8" y="8" width="359" height="651"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ucm-Zh-ugf">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="325.5"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1p-LY-8cn">
-                                        <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                        <rect key="frame" x="0.0" y="325.5" width="359" height="325.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.78609267979999997" alpha="1" colorSpace="calibratedWhite"/>
                                 <viewLayoutGuide key="safeArea" id="t4y-g9-eLj"/>
-                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                                <variation key="heightClass=compact" axis="horizontal"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.78609267979999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6gk-cz-FWd" firstAttribute="leading" secondItem="odA-SL-XsY" secondAttribute="leading" constant="8" id="SEc-tv-qia"/>
+                            <constraint firstItem="6gk-cz-FWd" firstAttribute="bottom" secondItem="odA-SL-XsY" secondAttribute="bottom" constant="-8" id="foK-fX-OXP"/>
+                            <constraint firstItem="6gk-cz-FWd" firstAttribute="top" secondItem="yY2-Uo-fDY" secondAttribute="top" constant="8" id="oU3-W2-AdD"/>
+                            <constraint firstItem="6gk-cz-FWd" firstAttribute="trailing" secondItem="odA-SL-XsY" secondAttribute="trailing" constant="-8" id="zvR-4A-ITQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="odA-SL-XsY"/>
                     </view>
                     <connections>
