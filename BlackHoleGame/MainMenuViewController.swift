@@ -29,5 +29,8 @@ class MainMenuViewController: UIViewController {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        playButton.titleLabel?.updateFontSizeToFit(size: playButton.bounds.size)
     }
 }
