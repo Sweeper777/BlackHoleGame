@@ -77,10 +77,17 @@ class GameAI {
     }
     
     private func minimax(depth: Int, color: PlayerSide) -> (score: Int, row: Int, index: Int) {
+        func isUndecied(_ result: GameResult) -> Bool {
+            if case .undecided = result {
+                return true
+            }
+            return false
+        }
+        
         var bestScore = color == myColor ? Int.min : Int.max
         var currentScore: Int
         var bestMove: (row: Int, index: Int)?
-        if game.checkWin() != .undecided || depth == 0 {
+        if !isUndecied(game.checkWin()) || depth == 0 {
             bestScore = evaluateHeuristics()
         } else {
             for move in getAvailableMoves() {
