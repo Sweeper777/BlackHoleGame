@@ -38,9 +38,3 @@ enum GameResult {
     case draw(both: Int)
     case undecided
 }
-
-#if RELEASE
-var a = 1
-#elseif DEBUG
-var a = 2
-#endif
