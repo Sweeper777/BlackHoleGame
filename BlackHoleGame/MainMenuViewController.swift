@@ -29,6 +29,8 @@ class MainMenuViewController: UIViewController {
             make.centerX.equalTo(playButton.snp.centerX)
             make.top.equalTo(playButton.snp.bottom).offset(8)
         }
+        helpButton.setTitle("HELP", for: .normal)
+        
         connectButton = PressableButton(frame: .zero)
         buttonContainer.addSubview(connectButton)
         connectButton.snp.makeConstraints { (make) in
@@ -37,6 +39,7 @@ class MainMenuViewController: UIViewController {
             make.centerX.equalTo(playButton.snp.centerX)
             make.top.equalTo(helpButton.snp.bottom).offset(8)
         }
+        connectButton.setTitle("CONNECT", for: .normal)
     }
     
     override func overrideTraitCollection(forChild childViewController: UIViewController) -> UITraitCollection? {
