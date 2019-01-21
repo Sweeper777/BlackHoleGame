@@ -21,6 +21,14 @@ class MainMenuViewController: UIViewController {
             make.right.equalToSuperview().offset(-8).priority(.high)
         }
         playButton.setTitle("PLAY", for: .normal)
+        helpButton = PressableButton(frame: .zero)
+        buttonContainer.addSubview(helpButton)
+        helpButton.snp.makeConstraints { (make) in
+            make.height.equalTo(playButton.snp.height)
+            make.width.equalTo(playButton.snp.width)
+            make.centerX.equalTo(playButton.snp.centerX)
+            make.top.equalTo(playButton.snp.bottom).offset(8)
+        }
     }
     
     override func overrideTraitCollection(forChild childViewController: UIViewController) -> UITraitCollection? {
