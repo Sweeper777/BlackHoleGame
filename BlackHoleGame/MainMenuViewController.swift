@@ -6,6 +6,8 @@ class MainMenuViewController: UIViewController {
     @IBOutlet var buttonContainer: UIView!
     
     var playButton: PressableButton!
+    var helpButton: PressableButton!
+    var connectButton: PressableButton!
     
     override func viewDidLoad() {
         playButton = PressableButton(frame: .zero)
