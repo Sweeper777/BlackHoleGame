@@ -3,7 +3,7 @@ import SnapKit
 import SwiftyButton
 import SCLAlertView
 
-class ViewController: UIViewController, BoardViewDelegate, GameDelegate {
+class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
 
     var aiQueue = DispatchQueue(label: "aiQueue")
     
