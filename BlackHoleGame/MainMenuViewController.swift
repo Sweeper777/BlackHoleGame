@@ -56,4 +56,12 @@ class MainMenuViewController: UIViewController {
         helpButton.titleLabel?.updateFontSizeToFit(size: helpButton.bounds.size)
         connectButton.titleLabel?.updateFontSizeToFit(size: connectButton.bounds.size)
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        playButton.titleLabel?.updateFontSizeToFit(size: playButton.bounds.size)
+        helpButton.titleLabel?.updateFontSizeToFit(size: helpButton.bounds.size)
+        connectButton.titleLabel?.updateFontSizeToFit(size: connectButton.bounds.size)
+    }
+    
 }
