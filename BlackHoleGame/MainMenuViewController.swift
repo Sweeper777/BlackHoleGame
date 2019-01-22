@@ -64,4 +64,7 @@ class MainMenuViewController: UIViewController {
         connectButton.titleLabel?.updateFontSizeToFit(size: connectButton.bounds.size)
     }
     
+    @objc func playButtonPress() {
+        performSegue(withIdentifier: "showMapSelector", sender: self)
+    }
 }
