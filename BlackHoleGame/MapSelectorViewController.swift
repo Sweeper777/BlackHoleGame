@@ -85,5 +85,10 @@ class MapSelectorViewController : UIViewController {
             constraintRelativeToHeight.deactivate()
         }
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        backButton.titleLabel?.updateFontSizeToFit(size: backButton.bounds.size)
+    }
     }
 }
