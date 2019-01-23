@@ -69,6 +69,12 @@ class MapSelectorViewController : UIViewController {
         }
         
         updateBackButtonConstraints()
+    }
+    
+    @objc func backButtonPress() {
+        dismiss(animated: true, completion: nil)
+    }
+    
     func updateBackButtonConstraints() {
         if traitCollection.horizontalSizeClass == .regular &&
             traitCollection.verticalSizeClass == .compact {
