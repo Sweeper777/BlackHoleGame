@@ -56,5 +56,17 @@ class MapSelectorViewController : UIViewController {
             make.right.equalToSuperview().offset(-8)
         }
         
+        backButton = PressableButton(frame: .zero)
+        view.addSubview(backButton)
+        backButton.setTitle("BACK", for: .normal)
+        backButton.addTarget(self, action: #selector(backButtonPress), for: .touchUpInside)
+        backButton.snp.makeConstraints { (make) in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.left.equalTo(view.safeAreaLayoutGuide.snp.left).offset(8)
+            make.height.equalTo(backButton.width).dividedBy(1.5)
+            constraintRelativeToHeight = make.width.equalTo(view.snp.height).dividedBy(7).constraint
+            constraintRelativeToWidth = make.width.equalTo(view.snp.width).dividedBy(7).constraint
+        }
+        
     }
 }
