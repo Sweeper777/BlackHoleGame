@@ -9,6 +9,9 @@ class MapSelectorViewController : UIViewController {
     var map3Button: FlatButton!
     var backButton: PressableButton!
     
+    var constraintRelativeToHeight: Constraint!
+    var constraintRelativeToWidth: Constraint!
+    
     override func viewDidLoad() {
         mapContainer = UIView(frame: .zero)
         view.addSubview(mapContainer)
