@@ -35,5 +35,14 @@ class MapSelectorViewController : UIViewController {
             make.top.equalToSuperview().offset(8)
         }
         
+        map2Button = FlatButton(frame: .zero)
+        mapContainer.addSubview(map2Button)
+        map2Button.snp.makeConstraints { (make) in
+            make.height.equalToSuperview().dividedBy(2).offset(-16)
+            make.width.equalToSuperview().dividedBy(2).offset(-16)
+            make.top.equalTo(map1Button.snp.bottom).offset(8)
+            make.left.equalTo(8)
+        }
+        
     }
 }
