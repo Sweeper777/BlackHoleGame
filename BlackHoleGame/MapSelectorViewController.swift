@@ -68,5 +68,16 @@ class MapSelectorViewController : UIViewController {
             constraintRelativeToWidth = make.width.equalTo(view.snp.width).dividedBy(7).constraint
         }
         
+        updateBackButtonConstraints()
+    func updateBackButtonConstraints() {
+        if traitCollection.horizontalSizeClass == .regular &&
+            traitCollection.verticalSizeClass == .compact {
+            constraintRelativeToWidth.deactivate()
+            constraintRelativeToHeight.activate()
+        } else {
+            constraintRelativeToWidth.activate()
+            constraintRelativeToHeight.deactivate()
+        }
+    }
     }
 }
