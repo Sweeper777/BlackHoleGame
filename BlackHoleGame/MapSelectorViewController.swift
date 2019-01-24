@@ -90,5 +90,11 @@ class MapSelectorViewController : UIViewController {
         super.viewDidAppear(animated)
         backButton.titleLabel?.updateFontSizeToFit(size: backButton.bounds.size)
     }
+    
+    override func overrideTraitCollection(forChild childViewController: UIViewController) -> UITraitCollection? {
+        if view.bounds.width < view.bounds.height {
+            return UITraitCollection(traitsFrom: [UITraitCollection(horizontalSizeClass: .compact), UITraitCollection(verticalSizeClass: .regular)])
+        } else {
+            return UITraitCollection(traitsFrom: [UITraitCollection(horizontalSizeClass: .regular), UITraitCollection(verticalSizeClass: .compact)])
     }
 }
