@@ -21,6 +21,8 @@ class MainMenuViewController: UIViewController {
             make.right.equalToSuperview().offset(-8).priority(.high)
         }
         playButton.setTitle("PLAY", for: .normal)
+        playButton.addTarget(self, action: #selector(playButtonPress), for: .touchUpInside)
+        
         helpButton = PressableButton(frame: .zero)
         buttonContainer.addSubview(helpButton)
         helpButton.snp.makeConstraints { (make) in
