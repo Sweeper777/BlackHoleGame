@@ -18,6 +18,9 @@ extension GameAI {
         return moves
     }
 }
+
+class HeuristicAI : GameAI {
+    
     var game: Game
     
     let myColor: PlayerSide
