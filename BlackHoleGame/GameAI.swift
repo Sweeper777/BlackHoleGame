@@ -122,7 +122,11 @@ class HeuristicAI : GameAI {
         return (bestScore, bestMove?.row ?? 0, bestMove?.index ?? 0)
     }
     
-    func getNextMove(searchDepth: Int = 4) -> (row: Int, index: Int) {
+    func getNextMove() -> (row: Int, index: Int) {
+        return getNextMove(searchDepth: 4)
+    }
+    
+    func getNextMove(searchDepth: Int) -> (row: Int, index: Int) {
         let result = minimax(depth: searchDepth, color: myColor)
         return (result.row, result.index)
     }
