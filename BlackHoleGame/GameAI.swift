@@ -5,6 +5,19 @@ protocol GameAI {
     func getNextMove() -> (row: Int, index: Int)
 }
 
+extension GameAI {
+    func getAvailableMoves() -> [(row: Int, index: Int)] {
+        var moves = [(row: Int, index: Int)]()
+        for i in 0..<game.boardSize {
+            for j in 0..<(i + 1) {
+                if game.canMakeMove(row: i, index: j) {
+                    moves.append((i, j))
+                }
+            }
+        }
+        return moves
+    }
+}
     var game: Game
     
     let myColor: PlayerSide
