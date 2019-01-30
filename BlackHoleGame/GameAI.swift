@@ -1,4 +1,10 @@
-class GameAI {
+protocol GameAI {
+    var myColor: PlayerSide { get }
+    var game: Game { get }
+    
+    func getNextMove() -> (row: Int, index: Int)
+}
+
     var game: Game
     
     let myColor: PlayerSide
