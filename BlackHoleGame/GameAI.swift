@@ -148,6 +148,8 @@ class RandomAI : GameAI {
     var game: Game
     
     func getNextMove() -> (row: Int, index: Int) {
+        let moves = getAvailableMoves()
+        return moves.randomElement()!
     }
     
     init(game: Game, myColor: PlayerSide) {
