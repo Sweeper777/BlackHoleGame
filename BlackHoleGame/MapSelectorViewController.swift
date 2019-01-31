@@ -86,9 +86,8 @@ class MapSelectorViewController : UIViewController {
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        backButton.titleLabel?.updateFontSizeToFit(size: backButton.bounds.size)
+    override func viewDidLayoutSubviews() {
+        backButton.titleLabel?.updateFontSizeToFit()
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
