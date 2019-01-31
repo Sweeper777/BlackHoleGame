@@ -67,7 +67,7 @@ class MapSelectorViewController : UIViewController {
             make.height.equalTo(backButton.snp.width).dividedBy(1.5)
         }
         
-        updateBackButtonConstraints()
+//        updateBackButtonConstraints()
     }
     
     @objc func backButtonPress() {
@@ -102,11 +102,11 @@ class MapSelectorViewController : UIViewController {
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        backButton.titleLabel?.updateFontSizeToFit(size: backButton.bounds.size)
-        
-        coordinator.animate(alongsideTransition: { [weak self] (_) in
-            self?.updateBackButtonConstraints()
-        }, completion: nil)
+        backButton.titleLabel?.updateFontSizeToFit()
+//
+//        coordinator.animate(alongsideTransition: { [weak self] (_) in
+//            self?.updateBackButtonConstraints()
+//        }, completion: nil)
     }
     
     override func overrideTraitCollection(forChild childViewController: UIViewController) -> UITraitCollection? {
