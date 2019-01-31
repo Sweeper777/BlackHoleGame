@@ -141,3 +141,17 @@ class HeuristicAI : GameAI {
         }
     }
 }
+
+class RandomAI : GameAI {
+    var myColor: PlayerSide
+    
+    var game: Game
+    
+    func getNextMove() -> (row: Int, index: Int) {
+    }
+    
+    init(game: Game, myColor: PlayerSide) {
+        self.game = game
+        self.myColor = myColor
+    }
+}
