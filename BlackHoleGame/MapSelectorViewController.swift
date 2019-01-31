@@ -86,6 +86,17 @@ class MapSelectorViewController : UIViewController {
         }
     }
     
+//    func updateBackButtonConstraints() {
+//        if traitCollection.horizontalSizeClass == .regular &&
+//            traitCollection.verticalSizeClass == .compact {
+//            constraintRelativeToWidth.deactivate()
+//            constraintRelativeToHeight.activate()
+//        } else {
+//            constraintRelativeToWidth.activate()
+//            constraintRelativeToHeight.deactivate()
+//        }
+//    }
+    
     override func viewDidLayoutSubviews() {
         backButton.titleLabel?.updateFontSizeToFit()
     }
