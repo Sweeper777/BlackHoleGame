@@ -37,6 +37,7 @@ class MapSelectorViewController : UIViewController {
             make.width.equalToSuperview().dividedBy(2).offset(-16)
             make.top.equalToSuperview().offset(8)
         }
+        map1Button.addTarget(self, action: #selector(map1ButtonPress), for: .touchUpInside)
         
         map2Button = FlatButton(frame: .zero)
         mapContainer.addSubview(map2Button)
