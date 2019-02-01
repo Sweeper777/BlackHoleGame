@@ -9,6 +9,7 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
     
     var board: BoardView!
     var restartButton: PressableButton!
+    var quitButton: PressableButton!
     
     var game = Game(boardSize: 6)
     var turn = 1
