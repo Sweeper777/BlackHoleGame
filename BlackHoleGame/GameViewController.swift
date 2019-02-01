@@ -40,6 +40,17 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
         
         addConstraintsForNextMoveView()
         
+        quitButton = PressableButton()
+        quitButton.setTitle("╳", for: .normal)
+        view.addSubview(quitButton)
+        quitButton.snp.makeConstraints { (make) in
+            make.bottom.equalToSuperview().inset(8)
+            make.left.equalToSuperview().inset(8)
+            make.width.equalTo(quitButton.snp.height)
+            make.height.equalTo(nextMoveView.snp.width).dividedBy(2)
+        }
+        quitButton.addTarget(self, action: #selector(quitButtonDidPress), for: .touchUpInside)
+        
         restartButton = PressableButton()
         restartButton.setTitle("↺", for: .normal)
         view.addSubview(restartButton)
