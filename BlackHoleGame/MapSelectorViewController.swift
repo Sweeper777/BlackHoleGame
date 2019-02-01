@@ -75,15 +75,6 @@ class MapSelectorViewController : UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    func updateBackButtonConstraints() {
-        if traitCollection.horizontalSizeClass == .regular &&
-            traitCollection.verticalSizeClass == .compact {
-            constraintRelativeToWidth.deactivate()
-            constraintRelativeToHeight.activate()
-        } else {
-            constraintRelativeToWidth.activate()
-            constraintRelativeToHeight.deactivate()
-        }
     @objc func map1ButtonPress() {
         performSegue(withIdentifier: "showGame", sender: 0)
     }
