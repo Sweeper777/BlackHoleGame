@@ -63,7 +63,7 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
         restartButton.addTarget(self, action: #selector(restartButtonDidPress), for: .touchUpInside)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidLayoutSubviews() {
         restartButton.titleLabel!.updateFontSizeToFit(size: restartButton.bounds.size)
         nextMoveView.label.updateFontSizeToFit()
     }
