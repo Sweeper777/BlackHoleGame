@@ -67,6 +67,7 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
         restartButton.titleLabel!.updateFontSizeToFit(size: restartButton.bounds.size)
         quitButton.titleLabel!.updateFontSizeToFit(size: quitButton.bounds.size)
         nextMoveView.label.updateFontSizeToFit()
+        updateNextMoveViewConstraints()
     }
     
     func addConstraintsForNextMoveView() {
@@ -77,8 +78,6 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
             constraintRelativeToHeight = make.height.equalTo(view.snp.height).dividedBy(7).constraint
             constraintRelativeToWidth = make.width.equalTo(view.snp.width).dividedBy(7).constraint
         }
-        
-        updateNextMoveViewConstraints()
     }
     
     func updateNextMoveViewConstraints() {
