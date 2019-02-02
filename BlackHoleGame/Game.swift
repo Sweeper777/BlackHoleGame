@@ -5,6 +5,7 @@ class Game {
     var currentTurn = PlayerSide.red
     var currentNumber = 1
     let boardSize: Int
+    let totalMoves: Int
     
     var ended: Bool = false
     
@@ -14,13 +15,19 @@ class Game {
         self.boardSize = boardSize
         board = TriangularArray(rowCount: boardSize, defaultValue: .empty)
         switch boardSize {
-        case 4, 5:
+        case 4:
+            totalMoves = 8
             board[2, 1] = .wall
         case 7:
+            totalMoves = 20
             [(4, 2), (2, 0), (4, 0), (2, 2), (4, 4), (6, 2), (6, 4)]
                 .forEach { board[$0.0, $0.1] = .wall }
+        case 6:
+            totalMoves = 20
+        case 5:
+            totalMoves = 14
         default:
-            break
+            fatalError("Invalid Board Size: \(boardSize)")
         }
     }
     
@@ -29,6 +36,7 @@ class Game {
         currentTurn = game.currentTurn
         currentNumber = game.currentNumber
         boardSize = game.boardSize
+        totalMoves = game.totalMoves
     }
     
     func canMakeMove(row: Int, index: Int) -> Bool {
