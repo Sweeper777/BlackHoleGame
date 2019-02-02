@@ -68,4 +68,8 @@ class MainMenuViewController: UIViewController {
     @objc func playButtonPress() {
         performSegue(withIdentifier: "showMapSelector", sender: self)
     }
+    
+    @IBAction func unwindFromGame(segue: UIStoryboardSegue) {
+        
+    }
 }
