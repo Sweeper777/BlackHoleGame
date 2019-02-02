@@ -177,6 +177,13 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
         alert.showWarning("Confirm", subTitle: "Are you sure you want to restart?")
     }
     
+    @objc func quitButtonDidPress() {
+        let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(showCloseButton: false))
+        alert.addButton("Yes", action: quitGame)
+        alert.addButton("No", action: {})
+        alert.showWarning("Confirm", subTitle: "Are you sure you want to quit?")
+    }
+    
     func restartGame() {
         game = Game(boardSize: 6)
         game.delegate = self
