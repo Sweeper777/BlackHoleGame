@@ -146,7 +146,7 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
         aiQueue.async {
             [weak self] in
             guard let `self` = self else { return }
-            let ai = GameAI(game: Game(copyOf: self.game), myColor: self.game.currentTurn)
+            let ai = HeuristicAI(game: Game(copyOf: self.game), myColor: self.game.currentTurn)
             let move = ai.getNextMove(searchDepth: self.searchDepth(forTurn: self.turn))
             let aiNumber = self.game.currentNumber
             self.game.makeMove(row: move.row, index: move.index)
