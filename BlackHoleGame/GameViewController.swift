@@ -193,6 +193,10 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
         updateNextMoveView()
     }
     
+    func quitGame() {
+        performSegue(withIdentifier: "unwindToMainMenu", sender: nil)
+    }
+    
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         board.setNeedsDisplay()
         nextMoveView.setNeedsDisplay()
