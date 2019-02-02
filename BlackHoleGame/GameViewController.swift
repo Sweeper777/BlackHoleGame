@@ -65,6 +65,7 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
     
     override func viewDidLayoutSubviews() {
         restartButton.titleLabel!.updateFontSizeToFit(size: restartButton.bounds.size)
+        quitButton.titleLabel!.updateFontSizeToFit(size: quitButton.bounds.size)
         nextMoveView.label.updateFontSizeToFit()
     }
     
