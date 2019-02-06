@@ -14,6 +14,7 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
     
     var game = Game(boardSize: 6)
     var turn = 1
+    var myColor: PlayerSide!
     
     var constraintRelativeToHeight: Constraint!
     var constraintRelativeToWidth: Constraint!
