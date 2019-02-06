@@ -27,6 +27,7 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
         board.board = game.board
         board.delegate = self
         game.delegate = self
+        myColor = [PlayerSide.red, .blue].randomElement()!
         view.addSubview(board)
         
         nextMoveView = NextMoveView(frame: .zero)
