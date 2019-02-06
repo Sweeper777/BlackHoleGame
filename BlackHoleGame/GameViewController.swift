@@ -10,10 +10,10 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
     var board: BoardView!
     var restartButton: PressableButton!
     var quitButton: PressableButton!
+    var nextMoveView: NextMoveView!
     
     var game = Game(boardSize: 6)
     var turn = 1
-    var nextMoveView: NextMoveView!
     
     var constraintRelativeToHeight: Constraint!
     var constraintRelativeToWidth: Constraint!
