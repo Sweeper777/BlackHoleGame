@@ -118,10 +118,10 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
     }
     
     func searchDepth(forTurn turn: Int) -> Int {
-        if turn < 10 {
+        if game.totalMoves - turn - 1 > 10 {
             return 3
         }
-        if turn < 14 {
+        if game.totalMoves - turn - 1 > 6 {
             return 4
         }
         return 6
