@@ -63,6 +63,8 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
             make.height.equalTo(nextMoveView.snp.width).dividedBy(2)
         }
         restartButton.addTarget(self, action: #selector(restartButtonDidPress), for: .touchUpInside)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: showPlayerSide)
     }
     
     override func viewDidLayoutSubviews() {
@@ -222,9 +224,11 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
         game = Game(boardSize: 6)
         game.delegate = self
         turn = 1
+        myColor = [PlayerSide.red, .blue].randomElement()
         board.board = game.board
         board.setNeedsDisplay()
         updateNextMoveView()
+        showPlayerSide()
     }
     
     func quitGame() {
