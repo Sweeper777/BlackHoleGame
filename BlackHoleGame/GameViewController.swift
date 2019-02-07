@@ -173,8 +173,15 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
         aiQueue.async {
             [weak self] in
             guard let `self` = self else { return }
-            let ai = HeuristicAI(game: Game(copyOf: self.game), myColor: self.game.currentTurn)
-            let move = ai.getNextMove(searchDepth: self.searchDepth(forTurn: self.turn))
+            let move: (row: Int, index: Int)
+            let ai: GameAI
+            if self.turn >= 8 {
+                ai = HeuristicAI(game: Game(copyOf: self.game), myColor: self.game.currentTurn)
+                move = (ai as! HeuristicAI).getNextMove(searchDepth: self.searchDepth(forTurn: self.turn))
+            } else {
+                ai = RandomAI(game: Game(copyOf: self.game), myColor: self.game.currentTurn)
+                move = ai.getNextMove()
+            }
             let aiNumber = self.game.currentNumber
             self.game.makeMove(row: move.row, index: move.index)
             self.board.board = self.game.board
