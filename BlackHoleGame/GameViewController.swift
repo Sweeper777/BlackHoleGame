@@ -166,6 +166,8 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
     }
     
     func aiTurn() {
+        guard !game.ended else { return }
+        
         self.board.board = self.game.board
         self.turn += 1
         aiQueue.async {
