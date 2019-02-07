@@ -105,6 +105,16 @@ class GameViewController: UIViewController, BoardViewDelegate, GameDelegate {
             alert.addButton("OK".localized, action: {})
             _ = alert.showCustom("Your color is red. You go first.", subTitle: "", color: .black, icon: image)
         } else {
+            UIGraphicsBeginImageContextWithOptions(CGSize(width: 56, height: 56), false, 0)
+            UIColor.blue.setFill()
+            let path = UIBezierPath(ovalIn: CGRect.zero.with(width: 56).with(height: 56))
+            path.fill()
+            let image = UIGraphicsGetImageFromCurrentImageContext()!
+            UIGraphicsEndImageContext()
+            let alert = SCLAlertView(appearance: SCLAlertView.SCLAppearance(kCircleIconHeight: 56, showCloseButton: false))
+            alert.addButton("OK".localized, action: aiTurn)
+            _ = alert.showCustom("Your color is blue. The AI goes first.", subTitle: "", color: .black, icon: image)
+        }
     }
     
     func searchDepth(forTurn turn: Int) -> Int {
