@@ -79,8 +79,14 @@ class MainMenuViewController: UIViewController {
         connectButton.titleLabel?.updateFontSizeToFit(size: connectButton.bounds.size)
     }
     
-    @objc func playButtonPress() {
-        performSegue(withIdentifier: "showMapSelector", sender: self)
+    @objc func onePlayerButtonPress() {
+        performSegue(withIdentifier: "showMapSelector", sender: 1)
+    }
+    
+    @objc func twoPlayerButtonPress() {
+        performSegue(withIdentifier: "showMapSelector", sender: 2)
+    }
+    
     }
     
     @IBAction func unwindFromGame(segue: UIStoryboardSegue) {
