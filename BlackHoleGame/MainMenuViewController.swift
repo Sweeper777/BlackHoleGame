@@ -5,14 +5,15 @@ import SwiftyButton
 class MainMenuViewController: UIViewController {
     @IBOutlet var buttonContainer: UIView!
     
-    var playButton: PressableButton!
+    var onePlayerButton: PressableButton!
+    var twoPlayerButton: PressableButton!
     var helpButton: PressableButton!
     var connectButton: PressableButton!
     
     override func viewDidLoad() {
-        playButton = PressableButton(frame: .zero)
-        buttonContainer.addSubview(playButton)
-        playButton.snp.makeConstraints { (make) in
+        onePlayerButton = PressableButton(frame: .zero)
+        buttonContainer.addSubview(onePlayerButton)
+        onePlayerButton.snp.makeConstraints { (make) in
             make.top.equalToSuperview().offset(8)
             make.centerX.equalToSuperview()
             make.height.equalToSuperview().dividedBy(4).offset(-8)
@@ -20,8 +21,13 @@ class MainMenuViewController: UIViewController {
             make.left.equalToSuperview().offset(8).priority(.high)
             make.right.equalToSuperview().offset(-8).priority(.high)
         }
-        playButton.setTitle("PLAY", for: .normal)
-        playButton.addTarget(self, action: #selector(playButtonPress), for: .touchUpInside)
+        onePlayerButton.setTitle("1 PLAYER", for: .normal)
+        onePlayerButton.addTarget(self, action: #selector(onePlayerButtonPress), for: .touchUpInside)
+        
+        twoPlayerButton = PressableButton(frame: .zero)
+        buttonContainer.addSubview(twoPlayerButton)
+        twoPlayerButton.setTitle("2 PLAYERS", for: .normal)
+        twoPlayerButton.addTarget(self, action: #selector(twoPlayerButtonPress), for: .touchUpInside)
         
         helpButton = PressableButton(frame: .zero)
         buttonContainer.addSubview(helpButton)
@@ -53,14 +59,16 @@ class MainMenuViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        playButton.titleLabel?.updateFontSizeToFit(size: playButton.bounds.size)
+        onePlayerButton.titleLabel?.updateFontSizeToFit(size: onePlayerButton.bounds.size)
+        twoPlayerButton.titleLabel?.updateFontSizeToFit(size: twoPlayerButton.bounds.size)
         helpButton.titleLabel?.updateFontSizeToFit(size: helpButton.bounds.size)
         connectButton.titleLabel?.updateFontSizeToFit(size: connectButton.bounds.size)
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        playButton.titleLabel?.updateFontSizeToFit(size: playButton.bounds.size)
+        onePlayerButton.titleLabel?.updateFontSizeToFit(size: onePlayerButton.bounds.size)
+        twoPlayerButton.titleLabel?.updateFontSizeToFit(size: twoPlayerButton.bounds.size)
         helpButton.titleLabel?.updateFontSizeToFit(size: helpButton.bounds.size)
         connectButton.titleLabel?.updateFontSizeToFit(size: connectButton.bounds.size)
     }
