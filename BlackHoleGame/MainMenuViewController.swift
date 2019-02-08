@@ -87,6 +87,10 @@ class MainMenuViewController: UIViewController {
         performSegue(withIdentifier: "showMapSelector", sender: 2)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? MapSelectorViewController {
+            vc.playerCount = sender as? Int
+        }
     }
     
     @IBAction func unwindFromGame(segue: UIStoryboardSegue) {
