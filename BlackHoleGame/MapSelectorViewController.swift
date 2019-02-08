@@ -81,16 +81,6 @@ class MapSelectorViewController : UIViewController {
         performSegue(withIdentifier: "showGame", sender: 0)
     }
     
-//    func updateBackButtonConstraints() {
-//        if traitCollection.horizontalSizeClass == .regular &&
-//            traitCollection.verticalSizeClass == .compact {
-//            constraintRelativeToWidth.deactivate()
-//            constraintRelativeToHeight.activate()
-//        } else {
-//            constraintRelativeToWidth.activate()
-//            constraintRelativeToHeight.deactivate()
-//        }
-//    }
     
     override func viewDidLayoutSubviews() {
         backButton.titleLabel?.updateFontSizeToFit()
@@ -99,10 +89,6 @@ class MapSelectorViewController : UIViewController {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         backButton.titleLabel?.updateFontSizeToFit()
-//
-//        coordinator.animate(alongsideTransition: { [weak self] (_) in
-//            self?.updateBackButtonConstraints()
-//        }, completion: nil)
     }
     
     override func overrideTraitCollection(forChild childViewController: UIViewController) -> UITraitCollection? {
