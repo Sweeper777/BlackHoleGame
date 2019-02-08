@@ -26,25 +26,31 @@ class MainMenuViewController: UIViewController {
         
         twoPlayerButton = PressableButton(frame: .zero)
         buttonContainer.addSubview(twoPlayerButton)
+        twoPlayerButton.snp.makeConstraints { (make) in
+            make.height.equalTo(onePlayerButton.snp.height)
+            make.width.equalTo(onePlayerButton.snp.width)
+            make.centerX.equalTo(onePlayerButton.snp.centerX)
+            make.top.equalTo(onePlayerButton.snp.bottom).offset(8)
+        }
         twoPlayerButton.setTitle("2 PLAYERS", for: .normal)
         twoPlayerButton.addTarget(self, action: #selector(twoPlayerButtonPress), for: .touchUpInside)
         
         helpButton = PressableButton(frame: .zero)
         buttonContainer.addSubview(helpButton)
         helpButton.snp.makeConstraints { (make) in
-            make.height.equalTo(playButton.snp.height)
-            make.width.equalTo(playButton.snp.width)
-            make.centerX.equalTo(playButton.snp.centerX)
-            make.top.equalTo(playButton.snp.bottom).offset(8)
+            make.height.equalTo(onePlayerButton.snp.height)
+            make.width.equalTo(onePlayerButton.snp.width)
+            make.centerX.equalTo(onePlayerButton.snp.centerX)
+            make.top.equalTo(twoPlayerButton.snp.bottom).offset(8)
         }
         helpButton.setTitle("HELP", for: .normal)
         
         connectButton = PressableButton(frame: .zero)
         buttonContainer.addSubview(connectButton)
         connectButton.snp.makeConstraints { (make) in
-            make.height.equalTo(playButton.snp.height)
-            make.width.equalTo(playButton.snp.width)
-            make.centerX.equalTo(playButton.snp.centerX)
+            make.height.equalTo(onePlayerButton.snp.height)
+            make.width.equalTo(onePlayerButton.snp.width)
+            make.centerX.equalTo(onePlayerButton.snp.centerX)
             make.top.equalTo(helpButton.snp.bottom).offset(8)
         }
         connectButton.setTitle("CONNECT", for: .normal)
