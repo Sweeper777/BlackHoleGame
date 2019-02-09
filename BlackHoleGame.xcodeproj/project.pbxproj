@@ -19,6 +19,7 @@
 		5A34794021C8879B00E0C686 /* BoardViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34793F21C8879B00E0C686 /* BoardViewDelegate.swift */; };
 		5A34E27321C9D80700EF0AFA /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34E27221C9D80700EF0AFA /* CircleView.swift */; };
 		5A34E27521C9DA3600EF0AFA /* FontSizeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A34E27421C9DA3600EF0AFA /* FontSizeHelper.swift */; };
+		5A36148A2205BE6200925087 /* TwoPlayerGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3614892205BE6200925087 /* TwoPlayerGameViewController.swift */; };
 		5A36463521DAFC3800250DDF /* NextMoveView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A36463421DAFC3800250DDF /* NextMoveView.xib */; };
 		5A36463721DAFE3700250DDF /* NextMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A36463621DAFE3700250DDF /* NextMoveView.swift */; };
 		5A3722DB21D85B5000AEB72C /* GameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3722DA21D85B5000AEB72C /* GameDelegate.swift */; };
@@ -55,6 +56,7 @@
 		5A34793F21C8879B00E0C686 /* BoardViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewDelegate.swift; sourceTree = "<group>"; };
 		5A34E27221C9D80700EF0AFA /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		5A34E27421C9DA3600EF0AFA /* FontSizeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontSizeHelper.swift; sourceTree = "<group>"; };
+		5A3614892205BE6200925087 /* TwoPlayerGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoPlayerGameViewController.swift; sourceTree = "<group>"; };
 		5A36463421DAFC3800250DDF /* NextMoveView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NextMoveView.xib; sourceTree = "<group>"; };
 		5A36463621DAFE3700250DDF /* NextMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextMoveView.swift; sourceTree = "<group>"; };
 		5A3722DA21D85B5000AEB72C /* GameDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				5A3471BA21C72DAE0079F5A3 /* TriangularArray.swift */,
 				5A37ED4021C38F0D00251FD5 /* AppDelegate.swift */,
 				5A37ED4221C38F0D00251FD5 /* GameViewController.swift */,
+				5A3614892205BE6200925087 /* TwoPlayerGameViewController.swift */,
 				5A34428B21EB366D00BC3637 /* MainMenuViewController.swift */,
 				5A32EF0921F3373C007C8E6A /* MapSelectorViewController.swift */,
 				5A3471C121C72FC80079F5A3 /* BoardView.swift */,
@@ -358,6 +361,7 @@
 				5A3722DB21D85B5000AEB72C /* GameDelegate.swift in Sources */,
 				5A36463721DAFE3700250DDF /* NextMoveView.swift in Sources */,
 				5A3471BD21C72DAE0079F5A3 /* Colors.swift in Sources */,
+				5A36148A2205BE6200925087 /* TwoPlayerGameViewController.swift in Sources */,
 				5A34428C21EB366D00BC3637 /* MainMenuViewController.swift in Sources */,
 				5A3471C021C72DAE0079F5A3 /* Game.swift in Sources */,
 				5A3471BF21C72DAE0079F5A3 /* TriangularArray.swift in Sources */,
