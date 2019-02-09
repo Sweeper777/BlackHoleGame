@@ -78,9 +78,16 @@ class MapSelectorViewController : UIViewController {
     }
     
     @objc func map1ButtonPress() {
-        performSegue(withIdentifier: "showGame", sender: 0)
+        showGame(map: 0)
     }
     
+    func showGame(map: Int) {
+        if playerCount == 1 {
+            performSegue(withIdentifier: "showAIGame", sender: map)
+        } else {
+            performSegue(withIdentifier: "show2PlayerGame", sender: map)
+        }
+    }
     
     override func viewDidLayoutSubviews() {
         backButton.titleLabel?.updateFontSizeToFit()
