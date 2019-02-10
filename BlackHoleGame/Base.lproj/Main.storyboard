@@ -93,13 +93,16 @@
         <!--Game View Controller-->
         <scene sceneID="yC7-iw-gNF">
             <objects>
-                <viewController id="PJE-ze-LPz" customClass="GameViewController" customModule="BlackHoleGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PJE-ze-LPz" customClass="AIGameViewController" customModule="BlackHoleGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lc3-pc-O8f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.78609267979999997" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="WQH-Jm-pTe"/>
                     </view>
+                    <connections>
+                        <segue destination="Tqb-K7-G9v" kind="unwind" identifier="unwindToMainMenu" unwindAction="unwindFromGameWithSegue:" id="egl-yv-fPH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twp-9T-1yb" sceneMemberID="firstResponder"/>
             </objects>
