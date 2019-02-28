@@ -1,4 +1,5 @@
 import UIKit
+import SwiftyButton
 
 fileprivate func shouldContinueToEnlarge(targetSize: CGSize, currentSize: CGSize) -> Bool {
     return targetSize.height > currentSize.height && targetSize.width > currentSize.width
@@ -24,11 +25,18 @@ extension String {
 
 extension UILabel {
     func updateFontSizeToFit(size: CGSize) {
-        let fontSize = fontSizeThatFits(size: size, text: (text ?? "a") as NSString, font: font) * 0.9
+        let fontSize = fontSizeThatFits(size: size, text: (text ?? "a") as NSString, font: font) * 0.75
         font = font.withSize(fontSize)
     }
     
     func updateFontSizeToFit() {
         updateFontSizeToFit(size: bounds.size)
+    }
+}
+
+extension PressableButton {
+    func updateTitleOffsets() {
+        self.shadowHeight = self.height * 0.15
+        self.titleEdgeInsets = UIEdgeInsets(top: -self.shadowHeight, left: 0, bottom: 0, right: 0)
     }
 }
