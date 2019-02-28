@@ -10,13 +10,16 @@ class GameViewControllerBase: UIViewController, BoardViewDelegate, GameDelegate 
     var quitButton: PressableButton!
     var nextMoveView: NextMoveView!
     
-    var game = Game(boardSize: 6)
+    var game: Game!
+    var boardSize = 6
     
     var constraintRelativeToHeight: Constraint!
     var constraintRelativeToWidth: Constraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        game = Game(boardSize: boardSize)
         
         board = BoardView(frame: CGRect(x: 10, y: 10, width: 300, height: 500))
         board.backgroundColor = .white
