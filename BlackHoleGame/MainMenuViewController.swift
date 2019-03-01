@@ -65,6 +65,11 @@ class MainMenuViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
+        self.onePlayerButton.updateTitleOffsets()
+        self.twoPlayerButton.updateTitleOffsets()
+        self.helpButton.updateTitleOffsets()
+        self.connectButton.updateTitleOffsets()
+        
         onePlayerButton.titleLabel?.updateFontSizeToFit(size: onePlayerButton.bounds.size)
         twoPlayerButton.titleLabel?.updateFontSizeToFit(size: twoPlayerButton.bounds.size)
         helpButton.titleLabel?.updateFontSizeToFit(size: helpButton.bounds.size)
@@ -73,10 +78,19 @@ class MainMenuViewController: UIViewController {
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        onePlayerButton.titleLabel?.updateFontSizeToFit(size: onePlayerButton.bounds.size)
-        twoPlayerButton.titleLabel?.updateFontSizeToFit(size: twoPlayerButton.bounds.size)
-        helpButton.titleLabel?.updateFontSizeToFit(size: helpButton.bounds.size)
-        connectButton.titleLabel?.updateFontSizeToFit(size: connectButton.bounds.size)
+        coordinator.animate(alongsideTransition: {
+            [unowned self] _ in
+            self.onePlayerButton.updateTitleOffsets()
+            self.twoPlayerButton.updateTitleOffsets()
+            self.helpButton.updateTitleOffsets()
+            self.connectButton.updateTitleOffsets()
+            
+            self.onePlayerButton.titleLabel?.updateFontSizeToFit(size: self.onePlayerButton.bounds.size)
+            self.twoPlayerButton.titleLabel?.updateFontSizeToFit(size: self.twoPlayerButton.bounds.size)
+            self.helpButton.titleLabel?.updateFontSizeToFit(size: self.helpButton.bounds.size)
+            self.connectButton.titleLabel?.updateFontSizeToFit(size: self.connectButton.bounds.size)
+        }, completion: nil)
+
     }
     
     @objc func onePlayerButtonPress() {
