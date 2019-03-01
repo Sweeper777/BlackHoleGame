@@ -16,7 +16,7 @@ class MainMenuViewController: UIViewController {
         onePlayerButton.snp.makeConstraints { (make) in
             make.top.equalToSuperview().offset(8)
             make.centerX.equalToSuperview()
-            make.height.equalToSuperview().dividedBy(4.5).offset(-8)
+            make.height.equalToSuperview().dividedBy(4.5).offset(-16)
             make.width.lessThanOrEqualTo(onePlayerButton.snp.height).multipliedBy(5)
             make.left.equalToSuperview().offset(8).priority(.high)
             make.right.equalToSuperview().offset(-8).priority(.high)
@@ -30,7 +30,7 @@ class MainMenuViewController: UIViewController {
             make.height.equalTo(onePlayerButton.snp.height)
             make.width.equalTo(onePlayerButton.snp.width)
             make.centerX.equalTo(onePlayerButton.snp.centerX)
-            make.top.equalTo(onePlayerButton.snp.bottom).offset(8)
+            make.top.equalTo(onePlayerButton.snp.bottom).offset(16)
         }
         twoPlayerButton.setTitle("2 PLAYERS", for: .normal)
         twoPlayerButton.addTarget(self, action: #selector(twoPlayerButtonPress), for: .touchUpInside)
@@ -41,7 +41,7 @@ class MainMenuViewController: UIViewController {
             make.height.equalTo(onePlayerButton.snp.height)
             make.width.equalTo(onePlayerButton.snp.width)
             make.centerX.equalTo(onePlayerButton.snp.centerX)
-            make.top.equalTo(twoPlayerButton.snp.bottom).offset(8)
+            make.top.equalTo(twoPlayerButton.snp.bottom).offset(16)
         }
         helpButton.setTitle("HELP", for: .normal)
         
@@ -51,7 +51,7 @@ class MainMenuViewController: UIViewController {
             make.height.equalTo(onePlayerButton.snp.height)
             make.width.equalTo(onePlayerButton.snp.width)
             make.centerX.equalTo(onePlayerButton.snp.centerX)
-            make.top.equalTo(helpButton.snp.bottom).offset(8)
+            make.top.equalTo(helpButton.snp.bottom).offset(16)
         }
         connectButton.setTitle("CONNECT", for: .normal)
     }
