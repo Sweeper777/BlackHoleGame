@@ -106,12 +106,16 @@ class MapSelectorViewController : UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
-        backButton.titleLabel?.updateFontSizeToFit()
+        backButton.updateTitleOffsets()
+        backButton.titleLabel?.updateFontSizeToFit(size: backButton.bounds.size)
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
-        backButton.titleLabel?.updateFontSizeToFit()
+        coordinator.animate(alongsideTransition: { [unowned self] (_) in
+            self.backButton.updateTitleOffsets()
+            self.backButton.titleLabel?.updateFontSizeToFit(size: self.backButton.bounds.size)
+        }, completion: nil)
     }
     
     override func overrideTraitCollection(forChild childViewController: UIViewController) -> UITraitCollection? {
