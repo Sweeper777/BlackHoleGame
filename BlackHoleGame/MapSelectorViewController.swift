@@ -49,6 +49,7 @@ class MapSelectorViewController : UIViewController {
             make.top.equalTo(map1Button.snp.bottom).offset(8)
             make.left.equalTo(8)
         }
+        map2Button.addTarget(self, action: #selector(map2ButtonPress), for: .touchUpInside)
         
         map3Button = FlatButton(frame: .zero)
         mapContainer.addSubview(map3Button)
@@ -58,6 +59,7 @@ class MapSelectorViewController : UIViewController {
             make.top.equalTo(map1Button.snp.bottom).offset(8)
             make.right.equalToSuperview().offset(-8)
         }
+        map3Button.addTarget(self, action: #selector(map3ButtonPress), for: .touchUpInside)
         
         backButton = PressableButton(frame: .zero)
         view.addSubview(backButton)
@@ -78,7 +80,15 @@ class MapSelectorViewController : UIViewController {
     }
     
     @objc func map1ButtonPress() {
-        showGame(map: 0)
+        showGame(map: 6)
+    }
+    
+    @objc func map2ButtonPress() {
+        showGame(map: 7)
+    }
+    
+    @objc func map3ButtonPress() {
+        showGame(map: 5)
     }
     
     func showGame(map: Int) {
