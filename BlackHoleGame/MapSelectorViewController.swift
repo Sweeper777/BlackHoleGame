@@ -40,6 +40,8 @@ class MapSelectorViewController : UIViewController {
             make.top.equalToSuperview().offset(8)
         }
         map1Button.addTarget(self, action: #selector(map1ButtonPress), for: .touchUpInside)
+        map1Button.setImage(UIImage(named: "map6"), for: .normal)
+        map1Button.contentMode = .scaleAspectFit
         
         map2Button = FlatButton(frame: .zero)
         mapContainer.addSubview(map2Button)
