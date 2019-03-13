@@ -152,7 +152,10 @@ class GameViewControllerBase: UIViewController, BoardViewDelegate, GameDelegate 
         nextMoveView.updateLabelFont()
         
         coordinator.animate(alongsideTransition: { [weak self] (context) in
-            self?.updateNextMoveViewConstraints()
+            guard let `self` = self else { return }
+            self.updateNextMoveViewConstraints()
+            self.restartButton.titleLabel!.updateFontSizeToFit(size: self.restartButton.bounds.size)
+            self.quitButton.titleLabel!.updateFontSizeToFit(size: self.quitButton.bounds.size)
             }, completion: nil)
     }
     
