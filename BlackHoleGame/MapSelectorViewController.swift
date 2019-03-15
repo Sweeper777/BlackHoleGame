@@ -22,7 +22,7 @@ class MapSelectorViewController : UIViewController {
     override func viewDidLoad() {
         mapContainer = UIView(frame: .zero)
         view.addSubview(mapContainer)
-        mapContainer.backgroundColor = .black
+//        mapContainer.backgroundColor = .black
         mapContainer.snp.makeConstraints { (make) in
             make.height.equalTo(mapContainer.snp.width)
             make.left.greaterThanOrEqualToSuperview().offset(8)
