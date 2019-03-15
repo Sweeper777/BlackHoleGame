@@ -14,6 +14,11 @@ class MapSelectorViewController : UIViewController {
     var constraintRelativeToHeight: Constraint!
     var constraintRelativeToWidth: Constraint!
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        [map1Button, map2Button, map3Button].compactMap { $0 }.forEach { $0!.cornerRadius = $0!.width / 4 }
+    }
+    
     override func viewDidLoad() {
         mapContainer = UIView(frame: .zero)
         view.addSubview(mapContainer)
