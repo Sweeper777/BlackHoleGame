@@ -59,6 +59,10 @@ class MapSelectorViewController : UIViewController {
             make.left.equalTo(8)
         }
         map2Button.addTarget(self, action: #selector(map2ButtonPress), for: .touchUpInside)
+        map2Button.setImage(UIImage(named: "map7"), for: .normal)
+        map2Button.imageView?.contentMode = .scaleAspectFit
+        map2Button.color = view.backgroundColor!
+        map2Button.highlightedColor = UIColor.gray.lighter()
         
         map3Button = FlatButton(frame: .zero)
         mapContainer.addSubview(map3Button)
