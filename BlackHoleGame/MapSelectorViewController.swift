@@ -73,6 +73,10 @@ class MapSelectorViewController : UIViewController {
             make.right.equalToSuperview().offset(-8)
         }
         map3Button.addTarget(self, action: #selector(map3ButtonPress), for: .touchUpInside)
+        map3Button.setImage(UIImage(named: "map5"), for: .normal)
+        map3Button.imageView?.contentMode = .scaleAspectFit
+        map3Button.color = view.backgroundColor!
+        map3Button.highlightedColor = UIColor.gray.lighter()
         
         backButton = PressableButton(frame: .zero)
         view.addSubview(backButton)
@@ -128,6 +132,7 @@ class MapSelectorViewController : UIViewController {
         coordinator.animate(alongsideTransition: { [unowned self] (_) in
             self.backButton.updateTitleOffsets()
             self.backButton.titleLabel?.updateFontSizeToFit(size: self.backButton.bounds.size)
+            [self.map1Button, self.map2Button, self.map3Button].forEach { $0!.cornerRadius = $0!.width / 4 }
         }, completion: nil)
     }
     
