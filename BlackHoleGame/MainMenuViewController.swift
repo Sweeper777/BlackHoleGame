@@ -65,30 +65,25 @@ class MainMenuViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
+        onePlayerButton.titleLabel?.updateFontSizeToFit(size: onePlayerButton.bounds.size)
+        twoPlayerButton.titleLabel?.font = onePlayerButton.titleLabel?.font
+        helpButton.titleLabel?.font = onePlayerButton.titleLabel?.font
+        connectButton.titleLabel?.font = onePlayerButton.titleLabel?.font
+        
         self.onePlayerButton.updateTitleOffsets()
         self.twoPlayerButton.updateTitleOffsets()
         self.helpButton.updateTitleOffsets()
         self.connectButton.updateTitleOffsets()
-        
-        onePlayerButton.titleLabel?.updateFontSizeToFit(size: onePlayerButton.bounds.size)
-        twoPlayerButton.titleLabel?.updateFontSizeToFit(size: twoPlayerButton.bounds.size)
-        helpButton.titleLabel?.updateFontSizeToFit(size: helpButton.bounds.size)
-        connectButton.titleLabel?.updateFontSizeToFit(size: connectButton.bounds.size)
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
         coordinator.animate(alongsideTransition: {
             [unowned self] _ in
-            self.onePlayerButton.updateTitleOffsets()
-            self.twoPlayerButton.updateTitleOffsets()
-            self.helpButton.updateTitleOffsets()
-            self.connectButton.updateTitleOffsets()
-            
             self.onePlayerButton.titleLabel?.updateFontSizeToFit(size: self.onePlayerButton.bounds.size)
-            self.twoPlayerButton.titleLabel?.updateFontSizeToFit(size: self.twoPlayerButton.bounds.size)
-            self.helpButton.titleLabel?.updateFontSizeToFit(size: self.helpButton.bounds.size)
-            self.connectButton.titleLabel?.updateFontSizeToFit(size: self.connectButton.bounds.size)
+            self.twoPlayerButton.titleLabel?.font = self.onePlayerButton.titleLabel?.font
+            self.helpButton.titleLabel?.font = self.onePlayerButton.titleLabel?.font
+            self.connectButton.titleLabel?.font = self.onePlayerButton.titleLabel?.font
         }, completion: nil)
 
     }
