@@ -135,7 +135,7 @@ class GameViewControllerBase: UIViewController, BoardViewDelegate, GameDelegate 
     }
     
     func restartGame() {
-        game = Game(boardSize: 6)
+        game = Game(boardSize: boardSize)
         game.delegate = self
         board.board = game.board
         board.setNeedsDisplay()
